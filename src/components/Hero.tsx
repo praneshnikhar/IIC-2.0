@@ -60,11 +60,11 @@ const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8 text-white/80">
               <div className="flex items-center">
                 <Calendar size={20} className="mr-2 text-[#f5b7b1]" />
-                <span>June 10-12, 2025</span>
+                <span>September 10-12, 2025</span>
               </div>
               <div className="flex items-center">
                 <MapPin size={20} className="mr-2 text-[#f5b7b1]" />
-                <span>Virtual & San Francisco, CA</span>
+                <span>Manipal University Jaipur</span>
               </div>
             </div>
           </div>
