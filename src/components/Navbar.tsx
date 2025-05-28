@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center space-x-2">
             <Code2 className="h-8 w-8 text-white" />
-            <span className="text-white font-bold text-xl">TechHack 2025</span>
+            <span className="text-white font-bold text-xl">IIC 2.0</span>
           </a>
 
           {/* Desktop Navigation */}
