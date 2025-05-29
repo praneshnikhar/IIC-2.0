@@ -1,27 +1,16 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Timeline from './components/Timeline';
-import Prizes from './components/Prizes';
-import Sponsors from './components/Sponsors';
-import FAQ from './components/FAQ';
-import Registration from './components/Registration';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Sponsors from './pages/Sponsors';
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <About />
-      <Timeline />
-      <Prizes />
-      <Sponsors />
-      <FAQ />
-      <Registration />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sponsors" element={<Sponsors />} />
+      </Routes>
+    </Router>
   );
 }
 

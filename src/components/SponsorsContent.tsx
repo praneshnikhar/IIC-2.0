@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const Sponsors: React.FC = () => {
+const SponsorsContent: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -67,13 +67,13 @@ const Sponsors: React.FC = () => {
               <h3 className="text-2xl font-bold text-white mb-8 text-center">{tier.tier}</h3>
               <div className={`grid ${tier.tier === "Platinum Sponsors" ? "md:grid-cols-2" : tier.tier === "Gold Sponsors" ? "md:grid-cols-3" : "md:grid-cols-4"} gap-6`}>
                 {tier.sponsors.map((sponsor, sponsorIndex) => (
-                  <div 
+                  <div
                     key={sponsorIndex}
                     className="bg-[#11234a] rounded-xl p-6 flex flex-col items-center justify-center border border-[#301b47] hover:border-[#4a2172] transition-all duration-300 aspect-video"
                   >
                     <div className="w-full h-32 mb-4 overflow-hidden rounded-lg bg-white/5 flex items-center justify-center p-4">
-                      <img 
-                        src={sponsor.logo} 
+                      <img
+                        src={sponsor.logo}
                         alt={`${sponsor.name} logo`}
                         className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-500"
                         style={{ opacity: 0.8 }}
@@ -92,8 +92,8 @@ const Sponsors: React.FC = () => {
           <p className="text-white/80 max-w-2xl mx-auto mb-8">
             Join our community of forward-thinking companies supporting the next generation of tech innovators. Various sponsorship packages are available.
           </p>
-          <a 
-            href="#contact" 
+          <a
+            href="#contact"
             className="inline-block bg-gradient-to-r from-[#4a2172] to-[#9d2449] hover:opacity-90 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300"
           >
             Sponsor TechHack 2025
@@ -104,4 +104,4 @@ const Sponsors: React.FC = () => {
   );
 };
 
-export default Sponsors;
+export default SponsorsContent;
