@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Code2, Menu, X } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
+//  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +25,7 @@ const Navbar: React.FC = () => {
     { name: 'Schedule', path: '/home#schedule' },
     { name: 'Prizes', path: '/home#prizes' },
     { name: 'Sponsors', path: '/sponsors' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'FAQ', path: '/home#faq' },
   ];
 
@@ -38,7 +39,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
             <Code2 className="h-8 w-8 text-white" />
-            <span className="text-white font-bold text-xl">TechHack 2025</span>
+            <span className="text-white font-bold text-xl">IIC 2.0</span>
           </Link>
 
           {/* Desktop Navigation */}
