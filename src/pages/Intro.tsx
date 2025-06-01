@@ -108,13 +108,16 @@ const IntroWrapper: React.FC = () => {
               We are <span className="text-cyan-400 font-semibold">
                 Back:
               </span>{" "}
-              Bigger
-              <span className="text-fuchsia-400 font-semibold"> in Imp</span>act
+              Bigger in
+              <span className="text-fuchsia-400 font-semibold"> Impact</span>
+              {"; "}
+              Bolder in
+              {" "}
               <span className="text-violet-400 font-semibold">
-                {" "}
-                Bolder in
-              </span>{" "}
+
               Innovation.
+              </span>{" "}
+
               <span className="inline-block animate-pulse ml-2">{"<"}</span>
               <div
                 className="inline-block w-3 h-6 bg-pink-400 ml-2 animate-pulse"
