@@ -141,10 +141,10 @@ const IntroWrapper: React.FC = () => {
 
           <div className="mt-8 text-center">
             <div className="text-pink-400 tracking-widest text-lg mb-2 animate-pulse">
-              // Neon dreams await...
+              // Make your dreams come true...
             </div>
             <div className="text-cyan-300 text-sm opacity-70 font-light">
-              [ Press ENTER to initialize cyber-matrix ]
+              [ Press ENTER to JOIN US ]
             </div>
           </div>
 
