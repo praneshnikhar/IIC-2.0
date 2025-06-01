@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from "react";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-/*import Navbar from "./Navbar";
-import Hero from "./Hero";
-import About from "./About";
-import Timeline from "./Timeline";
-import Prizes from "./Prizes";
-import Sponsors from "./Sponsors";
-import FAQ from "./FAQ";
-import Registration from "./Registration";
-import Footer from "./Footer";*/
+
 
 import ParticleBackground from "../components/ParticleBackground.tsx";
 
@@ -73,20 +65,22 @@ const IntroWrapper: React.FC = () => {
 
           <div className="relative mb-2">
             <h1
-              className={`text-6xl sm:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 via-pink-500 to-blue-400 transition-all duration-300 ${
+              className={`text-6xl sm:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FF0066] via-[#FF1493] to-[#FF69B4] transition-all duration-300 ${
                 glitchText !== "IIC 2.0" ? "animate-pulse" : ""
               }`}
               style={{
                 textShadow:
                   glitchText === "IIC 2.0"
-                    ? "0 2px 6px rgba(100, 150, 255, 0.4), 0 4px 12px rgba(100, 150, 255, 0.3)"
-                    : "0 0 12px rgba(100, 150, 255, 0.6), 0 0 24px rgba(100, 150, 255, 0.4)",
+                    ? "0 2px 8px rgba(255, 20, 147, 0.6), 0 4px 16px rgba(255, 20, 147, 0.5)"
+                    : "0 0 15px rgba(255, 0, 102, 0.7), 0 0 30px rgba(255, 0, 102, 0.6)",
                 filter:
-                  glitchText !== "IIC 2.0" ? "hue-rotate(210deg)" : "none",
+                  glitchText !== "IIC 2.0"
+                    ? "hue-rotate(330deg) saturate(1.5)"
+                    : "none",
                 WebkitTextStroke:
                   glitchText === "IIC 2.0"
-                    ? "0.5px rgba(240, 240, 255, 0.6)"
-                    : "0.7px rgba(240, 240, 255, 0.8)",
+                    ? "0.6px rgba(255, 182, 193, 0.7)"
+                    : "0.8px rgba(255, 182, 193, 0.9)",
               }}
             >
               {glitchText}
@@ -101,7 +95,7 @@ const IntroWrapper: React.FC = () => {
             />
           </div>
 
-            <p className="mb-5">International Innovation Challenge -2.0</p>
+          <p className="mb-5">International Innovation Challenge -2.0</p>
           <div className="relative mb-10">
             <p className="text-pink-300 max-w-2xl text-xl sm:text-2xl tracking-wider leading-relaxed font-light">
               <span className="inline-block animate-pulse mr-2">{">"}</span>
@@ -111,13 +105,10 @@ const IntroWrapper: React.FC = () => {
               Bigger in
               <span className="text-fuchsia-400 font-semibold"> Impact</span>
               {"; "}
-              Bolder in
-              {" "}
+              Bolder in{" "}
               <span className="text-violet-400 font-semibold">
-
-              Innovation.
+                Innovation.
               </span>{" "}
-
               <span className="inline-block animate-pulse ml-2">{"<"}</span>
               <div
                 className="inline-block w-3 h-6 bg-pink-400 ml-2 animate-pulse"
@@ -132,7 +123,7 @@ const IntroWrapper: React.FC = () => {
               className="relative px-16 py-5 rounded-lg text-xl font-bold text-white bg-gradient-to-r from-pink-600 via-fuchsia-600 to-purple-700 hover:from-purple-700 hover:to-pink-600 transition-all duration-500 transform hover:scale-105 active:scale-95 border-2 border-pink-500 overflow-hidden"
               style={{
                 boxShadow:
-                  "0 0 30px #ff00ff, 0 0 60px #ff00ff, inset 0 0 20px rgba(255, 0, 255, 0.1)",
+                  "0 0 30px #ff00ff, 0 0 10px #ff00ff, inset 0 0 20px rgba(255, 0, 255, 0.1)",
                 textShadow: "0 0 10px #fff",
                 letterSpacing: "3px",
               }}
@@ -169,7 +160,7 @@ const IntroWrapper: React.FC = () => {
         </div>
       )}
 
-     {/* <div
+      {/* <div
         className={`transition-all duration-1000 ${
           showIntro ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0"
         }`}
