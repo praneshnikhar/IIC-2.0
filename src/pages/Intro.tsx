@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import {useNavigate} from "react-router-dom";
 
-import Navbar from "./Navbar";
+/*import Navbar from "./Navbar";
 import Hero from "./Hero";
 import About from "./About";
 import Timeline from "./Timeline";
@@ -8,14 +9,15 @@ import Prizes from "./Prizes";
 import Sponsors from "./Sponsors";
 import FAQ from "./FAQ";
 import Registration from "./Registration";
-import Footer from "./Footer";
+import Footer from "./Footer";*/
 
-import ParticleBackground from "./ParticleBackground";
+import ParticleBackground from "../components/ParticleBackground.tsx";
 
 const IntroWrapper: React.FC = () => {
-  const [showIntro, setShowIntro] = useState(true);
+  const [showIntro] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
   const [glitchText, setGlitchText] = useState("IIC 2.0");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 100);
@@ -42,7 +44,7 @@ const IntroWrapper: React.FC = () => {
   }, []);
 
   const handleEnter = () => {
-    setShowIntro(false);
+    navigate("/home");
   };
 
   return (
@@ -99,7 +101,7 @@ const IntroWrapper: React.FC = () => {
             />
           </div>
 
-            <p className="mb-5">International Inovation Challenge -2.0</p>
+            <p className="mb-5">International Innovation Challenge -2.0</p>
           <div className="relative mb-10">
             <p className="text-pink-300 max-w-2xl text-xl sm:text-2xl tracking-wider leading-relaxed font-light">
               <span className="inline-block animate-pulse mr-2">{">"}</span>
@@ -164,7 +166,7 @@ const IntroWrapper: React.FC = () => {
         </div>
       )}
 
-      <div
+     {/* <div
         className={`transition-all duration-1000 ${
           showIntro ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0"
         }`}
@@ -182,10 +184,10 @@ const IntroWrapper: React.FC = () => {
             <Footer />
           </div>
         )}
-      </div>
+      </div>*/}
 
       {/* Custom Styles */}
-      <style jsx>{`
+      <style>{`
         @keyframes scanLine {
           0% {
             transform: translateX(-100%);
