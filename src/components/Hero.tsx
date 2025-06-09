@@ -35,9 +35,9 @@ const Hero: React.FC = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Innovate. <span className="text-[#f5b7b1]">Build.</span> Transform.
+              <span className="text-[#f5b7b1]">Bigger</span> in Impact <span className="text-[#f5b7b1]">Bolder</span> in Innovation
             </h1>
-            
+
             <p className="text-lg text-white/80 mb-8 leading-relaxed">
               Join the biggest hackathon of 2025. 48 hours of coding, collaboration, and creating solutions that matter. Connect with industry experts and showcase your skills.
             </p>
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8 text-white/80">
               <div className="flex items-center">
                 <Calendar size={20} className="mr-2 text-[#f5b7b1]" />
-                <span>September 10-12, 2025</span>
+                <span>September 7-8, 2025</span>
               </div>
               <div className="flex items-center">
                 <MapPin size={20} className="mr-2 text-[#f5b7b1]" />

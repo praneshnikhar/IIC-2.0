@@ -53,8 +53,13 @@ const About: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 animate-on-scroll opacity-0">About IIC 2.0</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#4a2172] to-[#9d2449] mx-auto"></div>
-          <p className="mt-6 text-lg text-white/80 max-w-3xl mx-auto animate-on-scroll opacity-0">
-            IIC 2.0 is a premier hackathon bringing together the brightest minds to develop innovative solutions for pressing challenges. Whether you're a seasoned developer or just starting out, TechHack offers a platform to learn, create, and connect.
+          <p className="mt-6 text-justify text-lg text-white/80 max-w-4xl mx-auto animate-on-scroll opacity-0">
+            The International Innovation Challenge (IIC) is an
+            empowering young minds to address real-world
+            challenges. The event brings together exceptional talents
+            in a 36-hour hackathon, allowing participants to
+            brainstorm and devise impactful solutions under the
+            mentorship of industry leaders
           </p>
         </div>
 
