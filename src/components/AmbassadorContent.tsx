@@ -4,7 +4,7 @@ import React from 'react';
 const AmbassadorContent: React.FC = () => {
   return (
     <main className="flex-grow px-6 py-16 flex flex-col items-center text-center">
-      <h1 className= "text-4xl sm:text-5xl font-bold mb-6 text-pink-400">
+      <h1 className= "pt-8 text-4xl sm:text-5xl font-bold mb-6 text-pink-400">
         Join the Movement.
       </h1>
       <p className="text-lg sm:text-xl max-w-3xl mb-10 text-gray-300 leading-relaxed">
