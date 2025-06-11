@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { Building, Sparkles } from 'lucide-react';
 
 const SponsorsContent: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -52,40 +51,35 @@ const SponsorsContent: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen space-bg">
-      <main className="container mx-auto px-4 py-20">
+    <section id="sponsors" ref={sectionRef} className="py-20 bg-gradient-to-b from-[#1c2e5a] to-[#0a1931]">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <div className="inline-block p-3 bg-gradient-to-br from-pink-500/20 to-purple-600/20 rounded-full mb-4 animate-on-scroll opacity-0">
-            <Building className="h-8 w-8 text-pink-400" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-on-scroll opacity-0">
-            Our <span className="gradient-text">Sponsors</span>
-          </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-on-scroll opacity-0">
-            IIC 2.0 is made possible by the generous support of our sponsors, who share our vision for innovation and technology advancement.
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 animate-on-scroll opacity-0">Our Sponsors</h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#4a2172] to-[#9d2449] mx-auto"></div>
+          <p className="mt-6 text-lg text-white/80 max-w-3xl mx-auto animate-on-scroll opacity-0">
+            TechHack 2025 is made possible by the generous support of our sponsors, who share our vision for innovation and technology advancement.
           </p>
         </div>
 
         <div className="space-y-16">
           {sponsorTiers.map((tier, tierIndex) => (
             <div key={tierIndex} className="animate-on-scroll opacity-0" style={{ animationDelay: `${tierIndex * 150}ms` }}>
-              <h3 className="text-3xl font-bold gradient-text mb-8 text-center">{tier.tier}</h3>
+              <h3 className="text-2xl font-bold text-white mb-8 text-center">{tier.tier}</h3>
               <div className={`grid ${tier.tier === "Platinum Sponsors" ? "md:grid-cols-2" : tier.tier === "Gold Sponsors" ? "md:grid-cols-3" : "md:grid-cols-4"} gap-6`}>
                 {tier.sponsors.map((sponsor, sponsorIndex) => (
                   <div
                     key={sponsorIndex}
-                    className="glass-card rounded-xl p-6 flex flex-col items-center justify-center hover:glass-card transition-all duration-300 aspect-video group"
+                    className="bg-[#11234a] rounded-xl p-6 flex flex-col items-center justify-center border border-[#301b47] hover:border-[#4a2172] transition-all duration-300 aspect-video"
                   >
                     <div className="w-full h-32 mb-4 overflow-hidden rounded-lg bg-white/5 flex items-center justify-center p-4">
                       <img
                         src={sponsor.logo}
                         alt={`${sponsor.name} logo`}
-                        className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-500"
                         style={{ opacity: 0.8 }}
                       />
                     </div>
-                    <h4 className="text-white font-medium text-center group-hover:text-pink-400 transition-colors duration-300">{sponsor.name}</h4>
+                    <h4 className="text-white font-medium text-center">{sponsor.name}</h4>
                   </div>
                 ))}
               </div>
@@ -94,21 +88,19 @@ const SponsorsContent: React.FC = () => {
         </div>
 
         <div className="mt-20 text-center animate-on-scroll opacity-0">
-          <div className="glass-card rounded-2xl p-8 max-w-2xl mx-auto">
-            <div className="flex items-center justify-center mb-6">
-              <Sparkles className="h-8 w-8 text-pink-400 mr-3" />
-              <h3 className="text-3xl font-bold gradient-text">Become a Sponsor</h3>
-            </div>
-            <p className="text-gray-300 max-w-2xl mx-auto mb-8 text-lg">
-              Join our community of forward-thinking companies supporting the next generation of tech innovators. Various sponsorship packages are available.
-            </p>
-            <button className="modern-button neon-button px-8 py-3 rounded-lg font-medium transition-all duration-300">
-              Sponsor IIC 2.0
-            </button>
-          </div>
+          <h3 className="text-2xl font-bold text-white mb-6">Become a Sponsor</h3>
+          <p className="text-white/80 max-w-2xl mx-auto mb-8">
+            Join our community of forward-thinking companies supporting the next generation of tech innovators. Various sponsorship packages are available.
+          </p>
+          <a
+            href="#contact"
+            className="inline-block bg-gradient-to-r from-[#4a2172] to-[#9d2449] hover:opacity-90 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300"
+          >
+            Sponsor TechHack 2025
+          </a>
         </div>
-      </main>
-    </div>
+      </div>
+    </section>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Zap, Calendar, MapPin, Rocket } from 'lucide-react';
+import { Zap, Calendar, MapPin } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,16 +11,13 @@ const Hero: React.FC = () => {
   return (
     <section 
       id="hero" 
-      className="relative min-h-screen pt-20 overflow-hidden space-bg flex items-center"
+      className="relative min-h-screen pt-20 overflow-hidden bg-gradient-to-r from-[#0a1931] via-[#301b47] to-[#9d2449] flex items-center"
     >
-      {/* Floating geometric shapes */}
-      <div className="floating-shapes"></div>
-      
-      {/* Additional animated elements */}
+      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full animate-ping"></div>
-        <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-gradient-to-r from-cyan-400 to-pink-500 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 right-1/4 w-3 h-3 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute -top-20 -right-20 w-80 h-80 bg-[#4a2172] rounded-full opacity-20 blur-3xl"></div>
+        <div className="absolute top-1/2 -left-20 w-96 h-96 bg-[#0a1931] rounded-full opacity-20 blur-3xl"></div>
+        <div className="absolute bottom-20 right-1/4 w-64 h-64 bg-[#9d2449] rounded-full opacity-20 blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-6 z-10">
@@ -30,39 +27,43 @@ const Hero: React.FC = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
             }`}
           >
-            <div className="inline-block px-6 py-2 mb-6 rounded-full glass-card">
+            <div className="inline-block px-4 py-1 mb-6 rounded-full bg-white/10 backdrop-blur-sm">
               <p className="text-white font-medium flex items-center">
-                <Rocket size={18} className="mr-2 text-pink-400" />
-                <span className="gradient-text">Registrations Starting Soon!</span>
+                <Zap size={16} className="mr-2 text-[#f5b7b1]" />
+                <span>Registrations Starting Soon!</span>
               </p>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-              <span className="gradient-text">IIC</span> <span className="text-pink-400">2.0</span>
-              <br />
-              <span className="text-3xl md:text-4xl lg:text-5xl text-cyan-300">Innovation Unleashed</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              <span className="text-[#f5b7b1]">Bigger</span> in Impact <span className="text-[#f5b7b1]">Bolder</span> in Innovation
             </h1>
 
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              We're back with bigger impact and bolder innovation. Join the most anticipated hackathon of 2025 where dreams become reality.
+            <p className="text-lg text-white/80 mb-8 leading-relaxed">
+              Join the biggest hackathon of 2025. 48 hours of coding, collaboration, and creating solutions that matter. Connect with industry experts and showcase your skills.
             </p>
             
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
-              <button className="modern-button neon-button py-4 px-8 rounded-lg text-center font-bold">
-                Join the Revolution
-              </button>
-              <button className="glass-card hover:glass-card text-white font-medium py-4 px-8 rounded-lg transition-all duration-300 text-center border border-pink-400/30">
-                Discover More
-              </button>
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+              <a 
+                href="#register" 
+                className="bg-white hover:bg-gray-100 text-[#301b47] font-bold py-3 px-8 rounded-lg transition-all duration-300 text-center"
+              >
+                Register Now
+              </a>
+              <a 
+                href="#about" 
+                className="border border-white/30 hover:bg-white/10 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 text-center"
+              >
+                Learn More
+              </a>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8 text-gray-300">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8 text-white/80">
               <div className="flex items-center">
-                <Calendar size={20} className="mr-2 text-pink-400" />
+                <Calendar size={20} className="mr-2 text-[#f5b7b1]" />
                 <span>September 7-8, 2025</span>
               </div>
               <div className="flex items-center">
-                <MapPin size={20} className="mr-2 text-cyan-400" />
+                <MapPin size={20} className="mr-2 text-[#f5b7b1]" />
                 <span>Manipal University Jaipur</span>
               </div>
             </div>
@@ -73,42 +74,50 @@ const Hero: React.FC = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
             }`}
           >
-            <div className="relative z-10 glass-card p-8 rounded-2xl">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full opacity-20 blur-xl -z-10"></div>
-              <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-full opacity-20 blur-xl -z-10"></div>
+            <div className="relative z-10 bg-gradient-to-br from-[#301b47] to-[#4a2172] p-6 rounded-2xl shadow-xl border border-white/10">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-[#9d2449] rounded-full opacity-30 blur-xl -z-10"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-[#0a1931] rounded-full opacity-30 blur-xl -z-10"></div>
 
               <div className="text-center mb-6">
-                <div className="inline-block p-4 bg-gradient-to-br from-pink-500/20 to-purple-600/20 rounded-full mb-4">
-                  <Zap className="h-8 w-8 text-pink-400" />
-                </div>
-                <h3 className="gradient-text text-2xl font-bold mb-2">Get Ready!</h3>
-                <p className="text-gray-300">The future starts here</p>
+                {/*<span className="inline-block px-4 py-1 bg-white/10 text-white rounded-full text-sm font-medium mb-2">Countdown to Launch</span>
+                <div className="grid grid-cols-4 gap-3 mt-3">
+                  {[
+                    { value: "42", label: "Days" },
+                    { value: "18", label: "Hours" },
+                    { value: "56", label: "Mins" },
+                    { value: "24", label: "Secs" }
+                  ].map((item, index) => (
+                    <div key={index} className="flex flex-col">
+                      <span className="text-white text-2xl font-bold">{item.value}</span>
+                      <span className="text-white/60 text-xs">{item.label}</span>
+                    </div>
+                  ))}
+                </div>*/}
+
+                <span className="text-white text-2xl font-bold">Registrations Starting Soon!</span>
               </div>
 
-              <div className="space-y-4">
-                <ul className="text-left text-gray-300 space-y-3">
+              <div className="space-y-4 text-center">
+                {/*<h3 className="text-white text-xl font-bold">Key Information</h3>*/}
+                <ul className="text-left text-white/80 space-y-3">
                   {[
-                    "Open to all innovators",
-                    "$50,000+ in prizes",
-                    "Industry expert mentorship",
-                    "Global networking opportunities"
+                    "Open to all skill levels",
+                    "$50,000 in total prizes",
+                    "Mentorship from industry experts",
+                    "Networking opportunities"
                   ].map((item, index) => (
                     <li key={index} className="flex items-center">
-                      <div className="w-2 h-2 rounded-full bg-gradient-to-r from-pink-400 to-cyan-400 mr-3"></div>
+                      <div className="w-2 h-2 rounded-full bg-[#f5b7b1] mr-2"></div>
                       {item}
                     </li>
                   ))}
                 </ul>
               </div>
-
-              <div className="mt-6 p-4 glass-card rounded-lg">
-                <p className="text-pink-300 text-center font-medium">
-                  "Where Innovation Meets Opportunity"
-                </p>
-              </div>
             </div>
           </div>
         </div>
+
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#0a1931]/50 to-transparent"></div>
       </div>
     </section>
   );
