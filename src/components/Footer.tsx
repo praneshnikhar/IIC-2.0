@@ -1,50 +1,56 @@
 import React from 'react';
-import { Code2, Mail, MapPin, Phone, Instagram, Linkedin, Github } from 'lucide-react';
+import { Code2, Mail, MapPin, Phone, Instagram, Linkedin, Github, Sparkles } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#0a1931] pt-16 pb-8">
-      <div className="container mx-auto px-4 md:px-6">
+    <footer className="space-bg pt-16 pb-8 relative">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
           <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <Code2 className="h-8 w-8 text-[#f5b7b1]"/>
-              <span className="text-white font-bold text-xl">IIC 2.0</span>
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="p-2 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg">
+                <Code2 className="h-6 w-6 text-white"/>
+              </div>
+              <span className="gradient-text font-bold text-xl">IIC 2.0</span>
             </div>
-            <p className="text-white/70 mb-6">
+            <p className="text-gray-300 mb-6 leading-relaxed">
               The premier hackathon experience where innovation meets opportunity. Join us for 48 hours of coding,
-              collaboration, and creation.
+              collaboration, and creation that will shape the future.
             </p>
             <div className="flex space-x-4">
               <a
                   href="https://www.instagram.com/iicmuj?igsh=ZzZjejkyOW5ibmNs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#11234a] hover:bg-[#301b47] p-2 rounded-full transition-colors duration-300"
+                  className="glass-card hover:glass-card p-3 rounded-full transition-all duration-300"
               >
-                <Instagram className="h-5 w-5 text-white"/>
+                <Instagram className="h-5 w-5 text-pink-400"/>
               </a>
               <a
                   href="https://www.linkedin.com/company/international-innovation-challenge-iic/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#11234a] hover:bg-[#301b47] p-2 rounded-full transition-colors duration-300"
+                  className="glass-card hover:glass-card p-3 rounded-full transition-all duration-300"
               >
-                <Linkedin className="h-5 w-5 text-white"/>
+                <Linkedin className="h-5 w-5 text-cyan-400"/>
               </a>
               <a
                   href="https://github.com/yourprofile"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#11234a] hover:bg-[#301b47] p-2 rounded-full transition-colors duration-300"
+                  className="glass-card hover:glass-card p-3 rounded-full transition-all duration-300"
               >
-                <Github className="h-5 w-5 text-white"/>
+                <Github className="h-5 w-5 text-purple-400"/>
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-white font-bold text-lg mb-6">Quick Links</h3>
+            <div className="flex items-center mb-6">
+              <Sparkles className="h-6 w-6 text-pink-400 mr-2" />
+              <h3 className="text-white font-bold text-lg">Quick Links</h3>
+            </div>
             <ul className="space-y-3">
               {[
                 {name: "About", href: "#about"},
@@ -57,8 +63,9 @@ const Footer: React.FC = () => {
                   <li key={index}>
                     <a
                         href={link.href}
-                        className="text-white/70 hover:text-[#f5b7b1] transition-colors duration-300"
+                        className="text-gray-300 hover:text-pink-400 transition-colors duration-300 flex items-center group"
                     >
+                      <div className="w-2 h-2 rounded-full bg-gradient-to-r from-pink-400 to-cyan-400 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       {link.name}
                     </a>
                   </li>
@@ -70,16 +77,22 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-bold text-lg mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <Mail className="h-5 w-5 text-[#f5b7b1] mr-3 mt-0.5" />
-                <span className="text-white/70">TBA</span>
+                <div className="bg-gradient-to-br from-pink-500/20 to-purple-600/20 p-2 rounded-lg mr-3 mt-0.5">
+                  <Mail className="h-5 w-5 text-pink-400" />
+                </div>
+                <span className="text-gray-300">TBA</span>
               </li>
               <li className="flex items-start">
-                <Phone className="h-5 w-5 text-[#f5b7b1] mr-3 mt-0.5" />
-                <span className="text-white/70">TBA</span>
+                <div className="bg-gradient-to-br from-cyan-500/20 to-blue-600/20 p-2 rounded-lg mr-3 mt-0.5">
+                  <Phone className="h-5 w-5 text-cyan-400" />
+                </div>
+                <span className="text-gray-300">TBA</span>
               </li>
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-[#f5b7b1] mr-3 mt-0.5" />
-                <span className="text-white/70">
+                <div className="bg-gradient-to-br from-purple-500/20 to-pink-600/20 p-2 rounded-lg mr-3 mt-0.5">
+                  <MapPin className="h-5 w-5 text-purple-400" />
+                </div>
+                <span className="text-gray-300">
                   Manipal University Jaipur<br />
                   Dehmi Kalan, Rajasthan 303007
                 </span>
@@ -88,15 +101,15 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-[#301b47] pt-8">
+        <div className="border-t border-pink-400/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-white/50 text-sm mb-4 md:mb-0">
-              &copy; 2025 TechHack. All rights reserved.
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+              &copy; 2025 IIC 2.0. All rights reserved. Built with ❤️ for innovation.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-white/50 hover:text-white/80 text-sm">Privacy Policy</a>
-              <a href="#" className="text-white/50 hover:text-white/80 text-sm">Terms of Service</a>
-              <a href="#" className="text-white/50 hover:text-white/80 text-sm">Code of Conduct</a>
+              <a href="#" className="text-gray-400 hover:text-pink-400 text-sm transition-colors duration-300">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-purple-400 text-sm transition-colors duration-300">Code of Conduct</a>
             </div>
           </div>
         </div>
