@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import GalleryContent from '../components/GalleryContent';
 
-const Sponsors: React.FC = () => {
+const Gallery: React.FC = () => {
     useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -17,4 +17,4 @@ const Sponsors: React.FC = () => {
   );
 };
 
-export default Sponsors;
+export default Gallery;

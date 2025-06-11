@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Timeline from '../components/Timeline';
 import Prizes from '../components/Prizes';
 import FAQ from '../components/FAQ';
 import Registration from '../components/Registration';
