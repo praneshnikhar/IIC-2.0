@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
             <div className="inline-block px-4 py-1 mb-6 rounded-full bg-white/10 backdrop-blur-sm">
               <p className="text-white font-medium flex items-center">
                 <Zap size={16} className="mr-2 text-[#f5b7b1]" />
-                <span>Registration Now Open</span>
+                <span>Registrations Starting Soon!</span>
               </p>
             </div>
 
@@ -77,9 +77,9 @@ const Hero: React.FC = () => {
             <div className="relative z-10 bg-gradient-to-br from-[#301b47] to-[#4a2172] p-6 rounded-2xl shadow-xl border border-white/10">
               <div className="absolute top-0 right-0 w-20 h-20 bg-[#9d2449] rounded-full opacity-30 blur-xl -z-10"></div>
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-[#0a1931] rounded-full opacity-30 blur-xl -z-10"></div>
-              
+
               <div className="text-center mb-6">
-                <span className="inline-block px-4 py-1 bg-white/10 text-white rounded-full text-sm font-medium mb-2">Countdown to Launch</span>
+                {/*<span className="inline-block px-4 py-1 bg-white/10 text-white rounded-full text-sm font-medium mb-2">Countdown to Launch</span>
                 <div className="grid grid-cols-4 gap-3 mt-3">
                   {[
                     { value: "42", label: "Days" },
@@ -92,11 +92,13 @@ const Hero: React.FC = () => {
                       <span className="text-white/60 text-xs">{item.label}</span>
                     </div>
                   ))}
-                </div>
+                </div>*/}
+
+                <span className="text-white text-2xl font-bold">Registrations Starting Soon!</span>
               </div>
 
               <div className="space-y-4 text-center">
-                <h3 className="text-white text-xl font-bold">Key Information</h3>
+                {/*<h3 className="text-white text-xl font-bold">Key Information</h3>*/}
                 <ul className="text-left text-white/80 space-y-3">
                   {[
                     "Open to all skill levels",
