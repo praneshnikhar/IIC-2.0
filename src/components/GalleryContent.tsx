@@ -45,7 +45,7 @@ const GalleryContent: React.FC = () => {
             <Camera className="h-8 w-8 text-pink-400" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Event <span className="gradient-text">Gallery</span>
+            <span className="gradient-text">Event Gallery</span>
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">

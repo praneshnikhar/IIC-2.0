@@ -27,9 +27,8 @@ const Registration: React.FC = () => {
 
 
   const benefits = [
-    "Access to exclusive workshops and mentorship",
     "Connect with industry professionals and peers",
-    "Compete for $50,000+ in prizes",
+    "Compete for ₹2.5L+ in prizes",
     "Learn new skills and technologies",
     "Build your portfolio with impressive projects",
     "Potential job opportunities with sponsor companies"
@@ -71,7 +70,7 @@ const Registration: React.FC = () => {
               </div>
 
               <div className="text-center">
-                <button className="modern-button neon-button py-4 px-12 rounded-lg text-xl font-bold transition-all duration-300">
+                <button className="modern-button neon-button py-4 px-12 rounded-lg text-xl font-bold transition-all duration-300 shadow-md">
                   <Rocket size={20} className="inline mr-2" />
                   Registrations Starting Soon!
                 </button>

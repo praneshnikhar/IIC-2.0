@@ -38,7 +38,6 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { name: 'About', path: '/home#about' },
-    { name: 'Schedule', path: '/home#schedule' },
     { name: 'Prizes', path: '/home#prizes' },
     { name: 'Sponsors', path: '/sponsors' },
     { name: 'Gallery', path: '/gallery' },
@@ -75,7 +74,7 @@ const Navbar: React.FC = () => {
             ))}
             <button
               onClick={() => handleNavClick('/home#register')}
-              className="modern-button neon-button px-6 py-2 rounded-md font-medium transition-all duration-300"
+              className="modern-button neon-button px-6 py-2 rounded-md font-medium transition-all duration-300 shadow-md"
             >
               <Zap size={16} className="inline mr-1" />
               Register

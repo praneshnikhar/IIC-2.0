@@ -48,10 +48,10 @@ const Hero: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
-              <button className="modern-button neon-button py-4 px-8 rounded-lg text-center font-bold">
+              <button className="modern-button neon-button py-4 px-8 rounded-lg text-center font-bold transition-all duration-300 shadow-md">
                 Join the Revolution
               </button>
-              <button className="glass-card hover:glass-card text-white font-medium py-4 px-8 rounded-lg transition-all duration-300 text-center border border-pink-400/30">
+              <button className="glass-card hover:glass-card text-white font-medium py-4 px-8 rounded-lg transition-all duration-300 text-center border border-pink-400/30 shadow-sm">
                 Discover More
               </button>
             </div>
@@ -89,8 +89,8 @@ const Hero: React.FC = () => {
                 <ul className="text-left text-gray-300 space-y-3">
                   {[
                     "Open to all innovators",
-                    "$50,000+ in prizes",
-                    "Industry expert mentorship",
+                    "₹2.5L+ in prizes",
+                    "Expert mentorship",
                     "Global networking opportunities"
                   ].map((item, index) => (
                     <li key={index} className="flex items-center">

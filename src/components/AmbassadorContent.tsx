@@ -137,12 +137,12 @@ const AmbassadorContent: React.FC = () => {
                 </div>
               ))}
             </div>
-            <div className="mt-8 p-4 glass-card rounded-lg">
+            {/*<div className="mt-8 p-4 glass-card rounded-lg">
               <p className="text-gray-300 text-sm">
                 "Being an IIC Ambassador has been an incredible journey of growth, leadership, and community building. The experience has opened doors I never imagined possible."
               </p>
               <p className="gradient-text text-sm mt-2 font-medium">- Previous Ambassador</p>
-            </div>
+            </div>*/}
           </div>
         </div>
 

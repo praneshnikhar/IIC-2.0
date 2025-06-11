@@ -81,7 +81,7 @@ const About: React.FC = () => {
           ))}
         </div>
 
-        <div className="glass-card rounded-2xl p-8 md:p-12 animate-on-scroll opacity-0">
+        {/*<div className="glass-card rounded-2xl p-8 md:p-12 animate-on-scroll opacity-0">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-2/3 mb-8 md:mb-0 md:pr-8">
               <div className="flex items-center mb-4">
@@ -123,7 +123,7 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
     </section>
   );
