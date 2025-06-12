@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Trophy, Award, Star, Zap, Crown } from 'lucide-react';
+import { Trophy, Award, Star, Zap } from 'lucide-react';
 
 const Prizes: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -109,7 +109,7 @@ const Prizes: React.FC = () => {
           {mainPrizes.map((prize, index) => (
             <div 
               key={index}
-              className={`bg-gradient-to-b ${prize.gradient} rounded-2xl p-8 text-center shadow-lg transform transition-all duration-300 hover:-translate-y-2 animate-on-scroll opacity-0`}
+              className={`bg-gradient-to-b ${prize.color} rounded-2xl p-8 text-center shadow-lg transform transition-all duration-300 hover:-translate-y-2 animate-on-scroll opacity-0`}
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="inline-flex items-center justify-center bg-[#11234a]/50 p-4 rounded-full mb-6">
