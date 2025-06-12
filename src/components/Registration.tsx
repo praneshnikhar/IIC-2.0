@@ -1,3 +1,11 @@
+import React, { useEffect, useRef } from 'react';
+import { Check, Rocket, Sparkles } from 'lucide-react';
+
+const Registration: React.FC = () => {
+
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

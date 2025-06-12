@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
 
 interface FAQItem {
   question: string;
@@ -36,8 +36,8 @@ const FAQ: React.FC = () => {
 
   const faqItems: FAQItem[] = [
     {
-      question: "Who can participate in TechHack 2025?",
-      answer: "TechHack is open to all enthusiasts, regardless of experience level. Whether you're a student, professional, or hobbyist, as long as you're passionate about technology and innovation, you're welcome to join."
+      question: "Who can participate in IIC 2.0?",
+      answer: "IIC 2.0 is open to all enthusiasts, regardless of experience level. Whether you're a student, professional, or hobbyist, as long as you're passionate about technology and innovation, you're welcome to join."
     },
     {
       question: "Do I need to have a team to register?",
@@ -45,7 +45,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Is there a registration fee?",
-      answer: "No, participation in TechHack 2025 is completely free, thanks to our generous sponsors. However, registration is required as spaces are limited."
+      answer: "No, participation in IIC 2.0 is completely free, thanks to our generous sponsors. However, registration is required as spaces are limited."
     },
     {
       question: "What should I bring to the hackathon?",
@@ -70,55 +70,59 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <section id="faq" ref={sectionRef} className="py-20 bg-[#0a1931]">
+    <section id="faq" ref={sectionRef} className="py-20 space-bg">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 animate-on-scroll opacity-0">Frequently Asked Questions</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#4a2172] to-[#9d2449] mx-auto"></div>
-          <p className="mt-6 text-lg text-white/80 max-w-3xl mx-auto animate-on-scroll opacity-0">
-            Find answers to common questions about TechHack 2025. If you don't see your question here, feel free to contact us.
+          <div className="inline-block p-3 bg-gradient-to-br from-pink-500/20 to-purple-600/20 rounded-full mb-4 animate-on-scroll opacity-0">
+            <HelpCircle className="h-8 w-8 text-pink-400" />
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-on-scroll opacity-0">
+            Frequently Asked <span className="gradient-text">Questions</span>
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-6"></div>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-on-scroll opacity-0">
+            Find answers to common questions about IIC 2.0. If you don't see your question here, feel free to contact us.
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {faqItems.map((item, index) => (
-            <div 
-              key={index} 
-              className={`mb-4 bg-[#11234a] rounded-lg overflow-hidden transition-all duration-300 animate-on-scroll opacity-0`}
+            <div
+              key={index}
+              className={`mb-4 glass-card rounded-lg overflow-hidden transition-all duration-300 animate-on-scroll opacity-0`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <button
-                className="w-full px-6 py-4 text-left flex items-center justify-between focus:outline-none"
+                className="w-full px-6 py-4 text-left flex items-center justify-between focus:outline-none hover:bg-white/5 transition-colors duration-300"
                 onClick={() => toggleQuestion(index)}
               >
-                <span className="text-white font-medium">{item.question}</span>
-                {openIndex === index ? (
-                  <ChevronUp className="h-5 w-5 text-[#f5b7b1]" />
-                ) : (
-                  <ChevronDown className="h-5 w-5 text-[#f5b7b1]" />
-                )}
+                <span className="text-white font-medium text-lg">{item.question}</span>
+                <div className="bg-gradient-to-br from-pink-500/20 to-purple-600/20 p-2 rounded-full">
+                  {openIndex === index ? (
+                    <ChevronUp className="h-5 w-5 text-pink-400" />
+                  ) : (
+                    <ChevronDown className="h-5 w-5 text-pink-400" />
+                  )}
+                </div>
               </button>
-              <div 
+              <div
                 className={`px-6 overflow-hidden transition-all duration-300 ${
                   openIndex === index ? 'max-h-96 pb-4' : 'max-h-0'
                 }`}
               >
-                <p className="text-white/80">{item.answer}</p>
+                <p className="text-gray-300 text-lg leading-relaxed">{item.answer}</p>
               </div>
             </div>
           ))}
         </div>
 
         <div className="mt-12 text-center animate-on-scroll opacity-0">
-          <p className="text-white/80 mb-6">
+          <p className="text-gray-300 mb-6 text-lg">
             Still have questions? We're here to help!
           </p>
-          <a 
-            href="#contact" 
-            className="inline-block bg-[#301b47] hover:bg-[#4a2172] text-white px-6 py-3 rounded-lg font-medium transition-all duration-300"
-          >
+          <button className="modern-button neon-button px-8 py-3 rounded-lg font-medium transition-all duration-300">
             Contact Us
-          </a>
+          </button>
         </div>
       </div>
     </section>

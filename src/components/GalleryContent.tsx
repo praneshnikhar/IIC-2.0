@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Camera } from 'lucide-react';
+import { Camera, X } from 'lucide-react';
 
 const GalleryContent: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -38,12 +38,11 @@ const GalleryContent: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a1931]">
-
+    <div className="min-h-screen space-bg">
       <main className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
-          <div className="inline-block p-3 bg-[#301b47] rounded-full mb-4">
-            <Camera className="h-8 w-8 text-[#f5b7b1]" />
+          <div className="inline-block p-3 bg-gradient-to-br from-pink-500/20 to-purple-600/20 rounded-full mb-4">
+            <Camera className="h-8 w-8 text-pink-400" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             <span className="gradient-text">Event Gallery</span>
@@ -58,7 +57,7 @@ const GalleryContent: React.FC = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl cursor-pointer"
+              className="group relative overflow-hidden rounded-xl cursor-pointer glass-card hover:glass-card transition-all duration-300"
               onClick={() => setSelectedImage(image.url)}
             >
               <img
@@ -66,9 +65,14 @@ const GalleryContent: React.FC = () => {
                 alt={image.title}
                 className="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-white font-bold text-xl">{image.title}</h3>
-                <p className="text-white/80">{image.year}</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <h3 className="text-white font-bold text-xl gradient-text">{image.title}</h3>
+                <p className="text-gray-300">{image.year}</p>
+              </div>
+              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="bg-gradient-to-br from-pink-500/20 to-purple-600/20 p-2 rounded-full backdrop-blur-sm">
+                  <Camera className="h-5 w-5 text-pink-400" />
+                </div>
               </div>
             </div>
           ))}
@@ -76,26 +80,25 @@ const GalleryContent: React.FC = () => {
 
         {selectedImage && (
           <div
-            className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4 backdrop-blur-sm"
             onClick={() => setSelectedImage(null)}
           >
             <div className="relative max-w-4xl w-full">
               <img
                 src={selectedImage}
                 alt="Selected"
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg shadow-2xl"
               />
               <button
-                className="absolute top-4 right-4 text-white/80 hover:text-white"
+                className="absolute top-4 right-4 glass-card p-2 rounded-full text-white hover:text-pink-400 transition-colors duration-300"
                 onClick={() => setSelectedImage(null)}
               >
-                Close
+                <X className="h-6 w-6" />
               </button>
             </div>
           </div>
         )}
       </main>
-
     </div>
   );
 };
