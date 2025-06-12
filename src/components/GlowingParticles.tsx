@@ -12,7 +12,11 @@ interface Particle {
   maxLife: number;
 }
 
-const GlowingParticles: React.FC = () => {
+interface GlowingParticlesProps {
+  maxParticles?: number;
+}
+
+const GlowingParticles: React.FC<GlowingParticlesProps> = ({maxParticles = 7}) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationFrameId = useRef<number>();
   const particlesRef = useRef<Particle[]>([]);
@@ -56,7 +60,6 @@ const GlowingParticles: React.FC = () => {
     };
 
     // Initialize particles
-    const maxParticles = 50;
     for (let i = 0; i < maxParticles; i++) {
       particlesRef.current.push(createParticle());
     }
