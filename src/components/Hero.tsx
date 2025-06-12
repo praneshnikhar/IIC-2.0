@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Zap, Calendar, MapPin, Rocket } from 'lucide-react';
+import GlowingParticles from './GlowingParticles';
 
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,6 +14,9 @@ const Hero: React.FC = () => {
       id="hero"
       className="relative min-h-screen pt-20 overflow-hidden space-bg flex items-center"
     >
+      {/* Glowing Particles */}
+      <GlowingParticles />
+
       {/* Floating geometric shapes */}
       <div className="floating-shapes"></div>
 

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import AmbassadorContent from '../components/AmbassadorContent';
+import GlowingParticles from '../components/GlowingParticles';
 
 const Ambassador: React.FC = () => {
   useEffect(() => {
@@ -9,7 +10,8 @@ const Ambassador: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0a1931]">
+    <div className="min-h-screen bg-[#0a1931] relative">
+      <GlowingParticles />
       <Navbar />
       <AmbassadorContent />
       <Footer />
