@@ -1,10 +1,3 @@
-import React, { useEffect, useRef } from 'react';
-import { Rocket, Sparkles, Check } from 'lucide-react';
-
-const Registration: React.FC = () => {
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -23,6 +16,7 @@ const Registration: React.FC = () => {
       elementsToAnimate?.forEach((el) => observer.unobserve(el));
     };
   }, []);
+
 
   const benefits = [
     "Connect with industry professionals and peers",
