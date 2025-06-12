@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import ParticleBackground from "../components/ParticleBackground.tsx";
 import GlowingParticles from "../components/GlowingParticles.tsx";
 
 const IntroWrapper: React.FC = () => {
@@ -39,8 +38,6 @@ const IntroWrapper: React.FC = () => {
 
   return (
     <div className="min-h-screen relative space-bg text-white overflow-hidden font-mono">
-      {/* Matrix Rain Background */}
-      <ParticleBackground />
       
       {/* Glowing Particles */}
       <GlowingParticles />
