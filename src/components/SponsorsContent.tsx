@@ -274,8 +274,8 @@ const SponsorsContent: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </main>
+    </div>
   );
 };
 
