@@ -61,25 +61,17 @@ const IntroWrapper: React.FC = () => {
             }}
           />
 
-          <div className="relative mb-2">
-            <h1
-              className={`text-6xl sm:text-8xl font-extrabold gradient-text transition-all duration-300 ${
-                glitchText !== "IIC 2.0" ? "animate-pulse" : ""
-              }`}
+          {/* Logo Section */}
+          <div className="relative mb-8">
+            <img 
+              src="/Untitled design (28).png" 
+              alt="IIC 2.0 Logo" 
+              className="h-32 w-auto mx-auto mb-4 filter drop-shadow-2xl"
               style={{
-                textShadow:
-                  glitchText === "IIC 2.0"
-                    ? "0 2px 8px rgba(255, 20, 147, 0.6), 0 4px 16px rgba(255, 20, 147, 0.5)"
-                    : "0 0 15px rgba(255, 0, 102, 0.7), 0 0 30px rgba(255, 0, 102, 0.6)",
-                filter:
-                  glitchText !== "IIC 2.0"
-                    ? "hue-rotate(330deg) saturate(1.5)"
-                    : "none",
+                filter: "drop-shadow(0 0 20px rgba(255, 20, 147, 0.6))"
               }}
-            >
-              {glitchText}
-            </h1>
-
+            />
+            
             <div
               className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-500 to-transparent opacity-30 h-1"
               style={{
