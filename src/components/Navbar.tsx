@@ -68,10 +68,11 @@ const Navbar: React.FC = () => {
             
             {/* Hackathon Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <div className="p-2 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg">
-                <Code2 className="h-6 w-6 text-white" />
-              </div>
-              <span className="gradient-text font-bold text-xl">IIC 2.0</span>
+              <img 
+                src="/Untitled design (28).png" 
+                alt="IIC 2.0 Logo" 
+                className="h-10 w-auto"
+              />
             </Link>
           </div>
 
