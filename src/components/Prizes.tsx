@@ -28,10 +28,10 @@ const Prizes: React.FC = () => {
     {
       position: "1st Place",
       icon: <Crown className="h-12 w-12 text-yellow-400" />,
-      prize: "₹1,25,000",
+      prize: "₹1,00,000",
       gradient: "from-yellow-400 via-orange-500 to-red-500",
       benefits: [
-        "Cash prize of ₹1,25,000",
+        "Cash prize of ₹1,00,000",
         "Meetings with top venture capitalists",
         "6-month mentorship program",
         "Featured in TechCrunch article"
@@ -40,10 +40,10 @@ const Prizes: React.FC = () => {
     {
       position: "2nd Place",
       icon: <Trophy className="h-12 w-12 text-gray-300" />,
-      prize: "₹75,000",
+      prize: "₹50,000",
       gradient: "from-gray-300 via-gray-400 to-gray-500",
       benefits: [
-        "Cash prize of ₹75,000",
+        "Cash prize of ₹50,000",
         "3-month accelerator program",
         "Industry mentorship connections"
       ]
