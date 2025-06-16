@@ -27,14 +27,11 @@ const Hero: React.FC = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
             }`}
           >
-            {/* College Presents Badge */}
-            <div className="inline-flex items-center px-6 py-3 mb-6 rounded-full glass-card">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-xs">MUJ</span>
-              </div>
-              <p className="text-white font-medium">
-                <span className="text-gray-300">Manipal University Jaipur</span>
-                <span className="gradient-text font-semibold ml-2">presents</span>
+
+            <div className="inline-block px-6 py-2 mb-6 rounded-full glass-card">
+              <p className="text-white font-medium flex items-center">
+                <Rocket size={18} className="mr-2 text-pink-400" />
+                <span className="gradient-text">Registrations Starting Soon!</span>
               </p>
             </div>
 
@@ -81,11 +78,7 @@ const Hero: React.FC = () => {
               {/* Hackathon Logo in Card */}
               <div className="text-center mb-6">
                 <div className="inline-block p-4 bg-gradient-to-br from-pink-500/20 to-purple-600/20 rounded-full mb-4">
-                  <img 
-                    src="/Untitled design (28).png" 
-                    alt="IIC 2.0 Logo" 
-                    className="h-16 w-auto"
-                  />
+                  <Zap className="h-8 w-8 text-pink-400" />
                 </div>
                 <h3 className="gradient-text text-2xl font-bold mb-2">Get Ready!</h3>
                 <p className="text-gray-300">The future starts here</p>

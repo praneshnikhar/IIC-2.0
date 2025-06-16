@@ -80,46 +80,6 @@ const About: React.FC = () => {
             </div>
           ))}
         </div>
-
-        {/* Partnership Section */}
-        <div className="glass-card rounded-2xl p-8 md:p-12 animate-on-scroll opacity-0">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              <span className="gradient-text">In Partnership With</span>
-            </h3>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto"></div>
-          </div>
-          
-          <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
-            {/* College Logo */}
-            <div className="text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-4 mx-auto">
-                <span className="text-white font-bold text-2xl">MUJ</span>
-              </div>
-              <h4 className="text-white font-bold text-lg">Manipal University</h4>
-              <p className="text-gray-400">Jaipur</p>
-            </div>
-            
-            {/* Connector */}
-            <div className="flex items-center">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-pink-400 to-cyan-400 md:block hidden"></div>
-              <div className="w-0.5 h-16 bg-gradient-to-b from-pink-400 to-cyan-400 md:hidden block"></div>
-            </div>
-            
-            {/* Hackathon Logo */}
-            <div className="text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-pink-500/20 to-purple-600/20 rounded-2xl flex items-center justify-center mb-4 mx-auto p-2">
-                <img 
-                  src="/Untitled design (28).png" 
-                  alt="IIC 2.0 Logo" 
-                  className="h-20 w-auto"
-                />
-              </div>
-              <h4 className="text-white font-bold text-lg">International Innovation</h4>
-              <p className="text-gray-400">Challenge 2.0</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -27,11 +27,10 @@ const Footer: React.FC = () => {
               
               {/* Hackathon Logo */}
               <div className="flex items-center space-x-3">
-                <img 
-                  src="/Untitled design (28).png" 
-                  alt="IIC 2.0 Logo" 
-                  className="h-12 w-auto"
-                />
+                <div className="p-2 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg">
+                  <Code2 className="h-6 w-6 text-white"/>
+                </div>
+                <span className="gradient-text font-bold text-xl">IIC 2.0</span>
               </div>
             </div>
             
