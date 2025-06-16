@@ -1,5 +1,6 @@
 import React from 'react';
-import { Code2, Mail, MapPin, Phone, Instagram, Linkedin, Github, Sparkles } from 'lucide-react';
+import { Mail, MapPin, Phone, Instagram, Linkedin, Github, Sparkles } from 'lucide-react';
+import {Link} from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -10,30 +11,24 @@ const Footer: React.FC = () => {
           {/* Logo and Description Section */}
           <div className="lg:col-span-2">
             {/* Logos Section */}
-            <div className="flex items-center space-x-6 mb-6">
-              {/* College Logo */}
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">MUJ</span>
-                </div>
-                <div>
-                  <div className="text-white font-semibold">Manipal University</div>
-                  <div className="text-gray-400 text-sm">Jaipur</div>
-                </div>
-              </div>
-              
+            <div className="flex items-center space-x-4 mb-4">
+              {/* College Logo*/}
+              <img id="logo" role="button" alt="MUJ-Logo.png"
+                   src="/muj-logo.png" width="120"
+                   />
+
               {/* Separator */}
-              <div className="w-px h-12 bg-gradient-to-b from-pink-400 to-cyan-400 opacity-50"></div>
-              
+              <div className="w-px h-8 bg-gradient-to-b from-pink-400 to-cyan-400 opacity-50"></div>
+
               {/* Hackathon Logo */}
-              <div className="flex items-center space-x-3">
-                <div className="p-2 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg">
-                  <Code2 className="h-6 w-6 text-white"/>
-                </div>
-                <span className="gradient-text font-bold text-xl">IIC 2.0</span>
-              </div>
+              <Link to="/" className="flex items-center space-x-3">
+
+                <img id="logo" role="button" alt="MUJ-Logo.png"
+                     src="/logo.png" width="120"/>
+
+              </Link>
             </div>
-            
+
             <p className="text-gray-300 mb-6 leading-relaxed">
               The premier hackathon experience where innovation meets opportunity. Join us for 48 hours of coding,
               collaboration, and creation that will shape the future.
@@ -69,7 +64,7 @@ const Footer: React.FC = () => {
           {/* Quick Links */}
           <div>
             <div className="flex items-center mb-6">
-              <Sparkles className="h-6 w-6 text-pink-400 mr-2" />
+              <Sparkles className="h-6 w-6 text-pink-400 mr-2"/>
               <h3 className="text-white font-bold text-lg">Quick Links</h3>
             </div>
             <ul className="space-y-3">
