@@ -56,20 +56,18 @@ const Navbar: React.FC = () => {
           {/* Logo Section */}
           <div className="flex items-center space-x-4">
             {/* College Logo Placeholder */}
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">MUJ</span>
-              </div>
-              <span className="text-white text-sm font-medium hidden sm:block">Manipal University</span>
-            </div>
-            
+            <img id="muj-logo" role="button" alt="MUJ-Logo.png"
+                 src="/public/muj-logo.png" width="140"
+                 className="lsq-non-lazy-image lsq-component-image lsq-image-action-click lsq-renderer-components css-15ccw9o"
+                 data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""/>
+
             {/* Separator */}
             <div className="w-px h-8 bg-gradient-to-b from-pink-400 to-cyan-400 opacity-50"></div>
-            
+
             {/* Hackathon Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <div className="p-2 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg">
-                <Code2 className="h-6 w-6 text-white" />
+                <Code2 className="h-6 w-6 text-white"/>
               </div>
               <span className="gradient-text font-bold text-xl">IIC 2.0</span>
             </Link>
@@ -78,13 +76,14 @@ const Navbar: React.FC = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => handleNavClick(item.path)}
-                className="text-gray-300 hover:text-pink-400 transition-colors duration-300 font-medium relative group"
-              >
-                {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                <button
+                    key={item.name}
+                    onClick={() => handleNavClick(item.path)}
+                    className="text-gray-300 hover:text-pink-400 transition-colors duration-300 font-medium relative group"
+                >
+                  {item.name}
+                  <span
+                      className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
             <button
