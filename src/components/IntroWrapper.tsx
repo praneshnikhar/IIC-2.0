@@ -62,7 +62,7 @@ const IntroWrapper: React.FC = () => {
           />
 
           <div className="relative mb-2">
-            <h1
+            {/*<h1
               className={`text-6xl sm:text-8xl font-extrabold gradient-text transition-all duration-300 ${
                 glitchText !== "IIC 2.0" ? "animate-pulse" : ""
               }`}
@@ -78,22 +78,26 @@ const IntroWrapper: React.FC = () => {
               }}
             >
               {glitchText}
-            </h1>
+            </h1>*/}
+
+            <img id="logo" role="button" alt="IIC-Logo.png"
+                 src="/logo.png" width="700"
+            />
 
             <div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-500 to-transparent opacity-30 h-1"
-              style={{
-                animation: "scanLine 3s linear infinite",
-                top: "50%",
-              }}
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-500 to-transparent opacity-30 h-1"
+                style={{
+                  animation: "scanLine 3s linear infinite",
+                  top: "50%",
+                }}
             />
           </div>
 
-          <p className="mb-5 text-cyan-300 text-xl">International Innovation Challenge 2.0</p>
+          {/*<p className="mb-5 text-cyan-300 text-xl">International Innovation Challenge 2.0</p>*/}
           <div className="relative mb-10">
             <p className="text-gray-300 max-w-2xl text-xl sm:text-2xl tracking-wider leading-relaxed font-light">
               <span className="inline-block animate-pulse mr-2 text-pink-400">{">"}</span>
-              We are <span className="gradient-text font-semibold">
+              We are <span className="text-pink-400 font-semibold">
                 Back:
               </span>{" "}
               Bigger in
