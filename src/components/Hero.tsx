@@ -27,16 +27,6 @@ const Hero: React.FC = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
             }`}
           >
-            {/* College Logo Section */}
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="flex items-center space-x-3 glass-card px-4 py-2 rounded-full">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">MUJ</span>
-                </div>
-                <span className="text-white text-sm font-medium">Manipal University Jaipur</span>
-              </div>
-              <div className="text-gray-400">presents</div>
-            </div>
 
             <div className="inline-block px-6 py-2 mb-6 rounded-full glass-card">
               <p className="text-white font-medium flex items-center">
