@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
             {/* Hackathon Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <img id="logo" role="button" alt="IIC-Logo.png"
-                   src="/logo.png" width="100"
+                   src="/iic-logo.png" width="100"
               />
             </Link>
           </div>

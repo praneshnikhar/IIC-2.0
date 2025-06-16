@@ -81,7 +81,7 @@ const IntroWrapper: React.FC = () => {
             </h1>*/}
 
             <img id="logo" role="button" alt="IIC-Logo.png"
-                 src="/logo.png" width="700"
+                 src="/iic-logo.png" width="700"
             />
 
             <div

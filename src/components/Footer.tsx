@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               <Link to="/" className="flex items-center space-x-3">
 
                 <img id="logo" role="button" alt="MUJ-Logo.png"
-                     src="/logo.png" width="120"/>
+                     src="/iic-logo.png" width="120"/>
 
               </Link>
             </div>
