@@ -65,35 +65,6 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        {/* College Partnership Section */}
-        <div className="glass-card rounded-2xl p-8 mb-16 animate-on-scroll opacity-0">
-          <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8">
-            <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-lg">MUJ</span>
-              </div>
-              <div>
-                <h3 className="text-white font-bold text-xl">Manipal University Jaipur</h3>
-                <p className="text-gray-400">Proud Host Institution</p>
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-0.5 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-2"></div>
-              <p className="text-pink-400 font-medium">In Partnership With</p>
-              <div className="w-12 h-0.5 bg-gradient-to-r from-cyan-400 to-pink-400 mx-auto mt-2"></div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center">
-                <Code className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <h3 className="gradient-text font-bold text-xl">IIC 2.0</h3>
-                <p className="text-gray-400">Innovation Challenge</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {features.map((feature, index) => (
             <div 
