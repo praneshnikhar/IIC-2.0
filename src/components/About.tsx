@@ -65,6 +65,35 @@ const About: React.FC = () => {
           </p>
         </div>
 
+        {/* College Partnership Section */}
+        <div className="glass-card rounded-2xl p-8 mb-16 animate-on-scroll opacity-0">
+          <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8">
+            <div className="flex items-center space-x-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                <span className="text-white font-bold text-lg">MUJ</span>
+              </div>
+              <div>
+                <h3 className="text-white font-bold text-xl">Manipal University Jaipur</h3>
+                <p className="text-gray-400">Proud Host Institution</p>
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-0.5 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-2"></div>
+              <p className="text-pink-400 font-medium">In Partnership With</p>
+              <div className="w-12 h-0.5 bg-gradient-to-r from-cyan-400 to-pink-400 mx-auto mt-2"></div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center">
+                <Code className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h3 className="gradient-text font-bold text-xl">IIC 2.0</h3>
+                <p className="text-gray-400">Innovation Challenge</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {features.map((feature, index) => (
             <div 
@@ -80,50 +109,6 @@ const About: React.FC = () => {
             </div>
           ))}
         </div>
-
-        {/*<div className="glass-card rounded-2xl p-8 md:p-12 animate-on-scroll opacity-0">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-2/3 mb-8 md:mb-0 md:pr-8">
-              <div className="flex items-center mb-4">
-                <Rocket className="h-8 w-8 text-pink-400 mr-3" />
-                <h3 className="text-3xl md:text-4xl font-bold text-white">Who Can Participate?</h3>
-              </div>
-              <p className="text-gray-300 mb-6 text-lg">
-                IIC 2.0 welcomes participants from all backgrounds and skill levels. Whether you're a student, professional, 
-                or hobbyist, if you're passionate about technology and innovation, you belong here.
-              </p>
-              <ul className="space-y-4">
-                {[
-                  "Students from high school, college, or university",
-                  "Industry professionals with a passion for innovation",
-                  "Self-taught developers and designers",
-                  "Tech enthusiasts of all skill levels"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
-                    <div className="min-w-4 h-4 mt-1 mr-3 rounded-full bg-gradient-to-r from-pink-400 to-cyan-400"></div>
-                    <span className="text-gray-300 text-lg">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="md:w-1/3 glass-card p-6 rounded-xl">
-              <h4 className="text-xl font-bold gradient-text mb-6">By the Numbers</h4>
-              <div className="space-y-6">
-                {[
-                  { number: "1000+", label: "Participants" },
-                  { number: "48", label: "Hours of Hacking" },
-                  { number: "30+", label: "Workshops & Sessions" },
-                  { number: "25+", label: "Industry Mentors" }
-                ].map((stat, index) => (
-                  <div key={index} className="flex items-center">
-                    <div className="text-3xl font-bold gradient-text mr-4">{stat.number}</div>
-                    <div className="text-gray-300">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>*/}
       </div>
     </section>
   );

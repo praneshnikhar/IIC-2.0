@@ -6,14 +6,34 @@ const Footer: React.FC = () => {
     <footer className="space-bg pt-16 pb-8 relative">
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
-          <div>
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg">
-                <Code2 className="h-6 w-6 text-white"/>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+          {/* Logo and Description Section */}
+          <div className="lg:col-span-2">
+            {/* Logos Section */}
+            <div className="flex items-center space-x-6 mb-6">
+              {/* College Logo */}
+              <div className="flex items-center space-x-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold">MUJ</span>
+                </div>
+                <div>
+                  <div className="text-white font-semibold">Manipal University</div>
+                  <div className="text-gray-400 text-sm">Jaipur</div>
+                </div>
               </div>
-              <span className="gradient-text font-bold text-xl">IIC 2.0</span>
+              
+              {/* Separator */}
+              <div className="w-px h-12 bg-gradient-to-b from-pink-400 to-cyan-400 opacity-50"></div>
+              
+              {/* Hackathon Logo */}
+              <div className="flex items-center space-x-3">
+                <div className="p-2 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg">
+                  <Code2 className="h-6 w-6 text-white"/>
+                </div>
+                <span className="gradient-text font-bold text-xl">IIC 2.0</span>
+              </div>
             </div>
+            
             <p className="text-gray-300 mb-6 leading-relaxed">
               The premier hackathon experience where innovation meets opportunity. Join us for 48 hours of coding,
               collaboration, and creation that will shape the future.
@@ -46,6 +66,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
+          {/* Quick Links */}
           <div>
             <div className="flex items-center mb-6">
               <Sparkles className="h-6 w-6 text-pink-400 mr-2" />
@@ -54,7 +75,6 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               {[
                 {name: "About", href: "#about"},
-                /*{name: "Schedule", href: "#schedule"},*/
                 {name: "Prizes", href: "#prizes"},
                 {name: "Sponsors", href: "#sponsors"},
                 {name: "FAQ", href: "#faq"},
@@ -73,6 +93,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
+          {/* Contact Information */}
           <div>
             <h3 className="text-white font-bold text-lg mb-6">Contact Us</h3>
             <ul className="space-y-4">

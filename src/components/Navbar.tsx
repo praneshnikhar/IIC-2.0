@@ -53,12 +53,27 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="p-2 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg">
-              <Code2 className="h-6 w-6 text-white" />
+          {/* Logo Section */}
+          <div className="flex items-center space-x-4">
+            {/* College Logo Placeholder */}
+            <div className="flex items-center space-x-2">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">MUJ</span>
+              </div>
+              <span className="text-white text-sm font-medium hidden sm:block">Manipal University</span>
             </div>
-            <span className="gradient-text font-bold text-xl">IIC 2.0</span>
-          </Link>
+            
+            {/* Separator */}
+            <div className="w-px h-8 bg-gradient-to-b from-pink-400 to-cyan-400 opacity-50"></div>
+            
+            {/* Hackathon Logo */}
+            <Link to="/" className="flex items-center space-x-3">
+              <div className="p-2 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg">
+                <Code2 className="h-6 w-6 text-white" />
+              </div>
+              <span className="gradient-text font-bold text-xl">IIC 2.0</span>
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

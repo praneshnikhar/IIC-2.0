@@ -20,13 +20,6 @@ const Hero: React.FC = () => {
       {/* Floating geometric shapes */}
       <div className="floating-shapes"></div>
 
-      {/* Additional animated elements */}
-     {/* <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full animate-ping"></div>
-        <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-gradient-to-r from-cyan-400 to-pink-500 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 right-1/4 w-3 h-3 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
-      </div>*/}
-
       <div className="container mx-auto px-4 md:px-6 z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div
@@ -34,6 +27,17 @@ const Hero: React.FC = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
             }`}
           >
+            {/* College Logo Section */}
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="flex items-center space-x-3 glass-card px-4 py-2 rounded-full">
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">MUJ</span>
+                </div>
+                <span className="text-white text-sm font-medium">Manipal University Jaipur</span>
+              </div>
+              <div className="text-gray-400">presents</div>
+            </div>
+
             <div className="inline-block px-6 py-2 mb-6 rounded-full glass-card">
               <p className="text-white font-medium flex items-center">
                 <Rocket size={18} className="mr-2 text-pink-400" />
@@ -81,6 +85,7 @@ const Hero: React.FC = () => {
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full opacity-20 blur-xl -z-10"></div>
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-full opacity-20 blur-xl -z-10"></div>
 
+              {/* Hackathon Logo in Card */}
               <div className="text-center mb-6">
                 <div className="inline-block p-4 bg-gradient-to-br from-pink-500/20 to-purple-600/20 rounded-full mb-4">
                   <Zap className="h-8 w-8 text-pink-400" />
