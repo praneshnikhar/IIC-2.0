@@ -1,9 +1,6 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import IntroWrapper from './pages/Intro';
 import Intro from './pages/Intro';
-
 import Ambassador from './pages/Ambassador';
 import Home from './pages/Home';
 import Sponsors from './pages/Sponsors';

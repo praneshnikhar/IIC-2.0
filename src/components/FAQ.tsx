@@ -37,35 +37,40 @@ const FAQ: React.FC = () => {
   const faqItems: FAQItem[] = [
     {
       question: "Who can participate in IIC 2.0?",
-      answer: "IIC 2.0 is open to all enthusiasts, regardless of experience level. Whether you're a student, professional, or hobbyist, as long as you're passionate about technology and innovation, you're welcome to join."
+      answer: "IIC 2.0 is open to all students across colleges and disciplines. Whether you’re a first-timer or a seasoned hacker, if you’ve got the passion to innovate — you’re in!"
     },
     {
       question: "Do I need to have a team to register?",
-      answer: "No, you can register individually and form teams during the event. We'll have team formation activities to help you find like-minded collaborators. Teams can have up to 4 members."
+      answer: "You can register individually or as a team of 2–4 members. Flying solo? We’ll help you team up with other brilliant minds!"
     },
     {
       question: "Is there a registration fee?",
-      answer: "No, participation in IIC 2.0 is completely free, thanks to our generous sponsors. However, registration is required as spaces are limited."
+      answer: "Yes, the registration fee is ₹500 per person. This covers your meals, resources, participation kit, and an unforgettable hackathon experience!"
     },
     {
       question: "What should I bring to the hackathon?",
-      answer: "For in-person participants: your laptop, charger, any personal devices you may need, and your enthusiasm! For virtual participants: ensure you have a stable internet connection and the necessary software installed."
+      answer: " Your laptop, charger, college ID, and anything else you may need for your project. Also — bring your creativity and caffeine cravings!"
     },
     {
       question: "Will there be food provided?",
-      answer: "Yes, for in-person participants, meals, snacks, and beverages will be provided throughout the event. We'll accommodate dietary restrictions mentioned during registration."
+      answer: "Yes, food and refreshments will be provided throughout the event. Stay focused — we’ll keep your hunger in check! 🍽️"
     },
     {
       question: "Can I work on a pre-existing project?",
-      answer: "No, all projects must be started from scratch at the beginning of the hackathon. You can come with ideas, but coding and design work should begin during the event."
+      answer: "No, all submissions must be developed during the hackathon. You can bring ideas, but coding starts only after the hackathon kicks off."
     },
     {
       question: "What resources will be available during the hackathon?",
-      answer: "Participants will have access to mentors, workshops, API credits from sponsors, and various development tools. Details will be provided closer to the event."
+      answer: " Power access, comfortable seating, stationery (if required), and mentorship support will be available to all participants."
     },
     {
       question: "How will projects be judged?",
-      answer: "Projects will be evaluated based on innovation, technical complexity, design, practicality, and presentation. Our panel of judges includes industry experts and sponsors."
+      answer: `Your project will be evaluated based on:
+      Innovation & Creativity,
+      Technical Execution,
+      Impact & Relevance to the Theme,
+      Pitch & Demo Presentation.
+      `
     }
   ];
 

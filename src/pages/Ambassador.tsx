@@ -1,4 +1,3 @@
-// src/pages/Ambassador.tsx
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -11,13 +10,11 @@ const Ambassador: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0a1931] text-white flex flex-col">
-      <div className="min-h-screen bg-[#0a1931] relative">
-        <GlowingParticles />
-        <Navbar />
-        <AmbassadorContent />
-        <Footer />
-      </div>
+    <div className="min-h-screen bg-[#0a1931] relative">
+      <GlowingParticles />
+      <Navbar />
+      <AmbassadorContent />
+      <Footer />
     </div>
   );
 };
