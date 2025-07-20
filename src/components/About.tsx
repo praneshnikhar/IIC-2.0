@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Code, Lightbulb, Users, Trophy } from 'lucide-react';
+import { Code, Lightbulb, Users, Trophy, Sparkles } from 'lucide-react';
 
 const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -26,97 +26,59 @@ const About: React.FC = () => {
 
   const features = [
     {
-      icon: <Code className="h-8 w-8 text-[#f5b7b1]" />,
+      icon: <Code className="h-8 w-8 text-pink-400" />,
       title: "Code with Purpose",
       description: "Build innovative solutions that address real-world challenges across various domains."
     },
     {
-      icon: <Lightbulb className="h-8 w-8 text-[#f5b7b1]" />,
+      icon: <Lightbulb className="h-8 w-8 text-cyan-400" />,
       title: "Learn & Grow",
       description: "Expand your skills through workshops, mentorship sessions, and hands-on experience."
     },
     {
-      icon: <Users className="h-8 w-8 text-[#f5b7b1]" />,
+      icon: <Users className="h-8 w-8 text-purple-400" />,
       title: "Connect & Collaborate",
       description: "Network with fellow developers, designers, and industry professionals."
     },
     {
-      icon: <Trophy className="h-8 w-8 text-[#f5b7b1]" />,
+      icon: <Trophy className="h-8 w-8 text-yellow-400" />,
       title: "Win Big",
       description: "Compete for substantial prizes and recognition for your innovative solutions."
     }
   ];
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 bg-[#0a1931]">
+    <section id="about" ref={sectionRef} className="py-20 space-bg">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 animate-on-scroll opacity-0">About IIC 2.0</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#4a2172] to-[#9d2449] mx-auto"></div>
-          <p className="mt-6 text-justify text-lg text-white/80 max-w-4xl mx-auto animate-on-scroll opacity-0">
-            The International Innovation Challenge (IIC) is an
-            empowering young minds to address real-world
-            challenges. The event brings together exceptional talents
-            in a 36-hour hackathon, allowing participants to
-            brainstorm and devise impactful solutions under the
-            mentorship of industry leaders
+          <div className="inline-block p-3 bg-gradient-to-br from-pink-500/20 to-purple-600/20 rounded-full mb-4 animate-on-scroll opacity-0">
+            <Sparkles className="h-8 w-8 text-pink-400" />
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-on-scroll opacity-0">
+            About <span className="gradient-text">IIC 2.0</span>
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-6"></div>
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto animate-on-scroll opacity-0 leading-relaxed">
+            The International Innovation Challenge (IIC) is an empowering platform for young minds to address real-world 
+            challenges. The event brings together exceptional talents in a 36-hour hackathon, allowing participants to 
+            brainstorm and devise impactful solutions under the mentorship of industry leaders.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="bg-[#11234a] rounded-xl p-6 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg animate-on-scroll opacity-0"
+              className="glass-card rounded-xl p-6 transition-all duration-300 hover:transform hover:-translate-y-2 animate-on-scroll opacity-0"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="bg-[#1c2e5a] inline-flex p-3 rounded-lg mb-4">
+              <div className="bg-gradient-to-br from-pink-500/10 to-purple-600/10 inline-flex p-4 rounded-lg mb-4">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-              <p className="text-white/70">{feature.description}</p>
+              <p className="text-gray-300">{feature.description}</p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-20 bg-gradient-to-r from-[#301b47] to-[#4a2172] rounded-2xl p-8 md:p-12 animate-on-scroll opacity-0">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-2/3 mb-8 md:mb-0 md:pr-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Who Can Participate?</h3>
-              <p className="text-white/80 mb-6">
-                IIC 2.0 welcomes participants from all backgrounds and skill levels. Whether you're a student, professional, or hobbyist, if you're passionate about technology and innovation, you belong here.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "Students from high school, college, or university",
-                  "Industry professionals with a passion for innovation",
-                  "Self-taught developers and designers",
-                  "Tech enthusiasts of all skill levels"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
-                    <div className="min-w-4 h-4 mt-1 mr-2 rounded-full bg-[#f5b7b1]"></div>
-                    <span className="text-white/80">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="md:w-1/3 bg-[#11234a] p-6 rounded-xl">
-              <h4 className="text-xl font-bold text-white mb-4">By the Numbers</h4>
-              <div className="space-y-6">
-                {[
-                  { number: "1000+", label: "Participants" },
-                  { number: "48", label: "Hours of Hacking" },
-                  { number: "30+", label: "Workshops & Sessions" },
-                  { number: "25+", label: "Industry Mentors" }
-                ].map((stat, index) => (
-                  <div key={index} className="flex items-center">
-                    <div className="text-2xl font-bold text-[#f5b7b1] mr-4">{stat.number}</div>
-                    <div className="text-white/80">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

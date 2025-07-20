@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Code2, Menu, X } from 'lucide-react';
+import { Menu, X, Zap } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
@@ -38,7 +38,6 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { name: 'About', path: '/home#about' },
-    { name: 'Schedule', path: '/home#schedule' },
     { name: 'Prizes', path: '/home#prizes' },
     { name: 'Sponsors', path: '/sponsors' },
     { name: 'Gallery', path: '/gallery' },
@@ -49,38 +48,56 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
-        isScrolled ? 'bg-opacity-95 bg-[#0a1931] shadow-lg py-2' : 'bg-transparent py-4'
+        isScrolled ? 'glass-card h-0 overflow-hidden' : 'bg-transparent py-4'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-2">
-            <Code2 className="h-8 w-8 text-white" />
-            <span className="text-white font-bold text-xl">IIC 2.0</span>
-          </Link>
+          {/* Logo Section */}
+          <div className="flex items-center space-x-4">
+            {/* College Logo Placeholder */}
+            <Link to="/" className="flex items-center space-x-3">
+              <img id="logo" role="button" alt="MUJ-Logo.png"
+                  src="/muj-logo.png" width="140"
+              />
+            </Link>
+
+            {/* Separator */}
+            <div className="w-px h-8 bg-gradient-to-b from-pink-400 to-cyan-400 opacity-50"></div>
+
+            {/* Hackathon Logo */}
+            <Link to="/" className="flex items-center space-x-3">
+              <img id="logo" role="button" alt="IIC-Logo.png"
+                   src="/iic-logo.png" width="100"
+              />
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => handleNavClick(item.path)}
-                className="text-white hover:text-[#f5b7b1] transition-colors duration-300 font-medium"
-              >
-                {item.name}
+                <button
+                    key={item.name}
+                    onClick={() => handleNavClick(item.path)}
+                    className="text-gray-300 hover:text-pink-400 transition-colors duration-300 font-medium relative group"
+                >
+                  {item.name}
+                  <span
+                      className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
             <button
               onClick={() => handleNavClick('/home#register')}
-              className="bg-gradient-to-r from-[#4a2172] to-[#9d2449] hover:opacity-90 text-white px-6 py-2 rounded-md font-medium transition-all duration-300"
+              className="modern-button neon-button px-6 py-2 rounded-md font-medium transition-all duration-300 shadow-md"
             >
+              <Zap size={16} className="inline mr-1" />
               Register
             </button>
           </div>
 
           {/* Mobile Navigation Toggle */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white p-2 glass-card rounded-lg"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -89,20 +106,21 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 px-2 bg-[#0a1931] bg-opacity-95 rounded-lg">
+          <div className="md:hidden mt-4 py-4 px-2 glass-card rounded-lg">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => handleNavClick(item.path)}
-                className="block w-full text-left py-2 text-white hover:text-[#f5b7b1] transition-colors duration-300 font-medium"
+                className="block w-full text-left py-3 text-gray-300 hover:text-pink-400 transition-colors duration-300 font-medium"
               >
                 {item.name}
               </button>
             ))}
             <button
               onClick={() => handleNavClick('/home#register')}
-              className="block w-full mt-2 bg-gradient-to-r from-[#4a2172] to-[#9d2449] text-white px-4 py-2 rounded-md font-medium text-center"
+              className="block w-full mt-2 modern-button px-4 py-3 rounded-md font-medium text-center"
             >
+              <Zap size={16} className="inline mr-1" />
               Register
             </button>
           </div>
