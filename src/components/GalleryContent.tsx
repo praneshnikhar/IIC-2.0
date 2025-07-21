@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react';  
 import { Camera, X } from 'lucide-react';
 
 const GalleryContent: React.FC = () => {
@@ -6,33 +6,78 @@ const GalleryContent: React.FC = () => {
 
   const images = [
     {
-      url: "https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&w=1260&h=750",
-      title: "Team Collaboration",
+      url: "public/20241115_101932.jpg",
+      title: "IIC",
       year: "2024"
     },
     {
-      url: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-      title: "Coding Session",
+      url: "public/20241115_224002.jpg",
+      title: "IIC",
       year: "2024"
     },
     {
-      url: "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-      title: "Project Presentation",
+      url: "public/20241115_224201.jpg",
+      title: "IIC",
       year: "2024"
     },
     {
-      url: "https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-      title: "Award Ceremony",
+      url: "public/20241116_122330.jpg",
+      title: "IIC",
       year: "2024"
     },
     {
-      url: "https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-      title: "Workshop Session",
+      url: "public/IMG_0001.jpeg",
+      title: "IIC",
       year: "2024"
     },
     {
-      url: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-      title: "Networking Event",
+      url: "public/IMG_1930.JPG",
+      title: "IIC",
+      year: "2024"
+    },
+    {
+      url: "public/IMG_2016.JPG",
+      title: "IIC",
+      year: "2024"
+    },
+    {
+      url: "public/IMG_2025.JPG",
+      title: "IIC",
+      year: "2024"
+    },
+    {
+      url: "public/IMG_2028.JPG",
+      title: "IIC",
+      year: "2024"
+    },
+    {
+      url: "public/IMG_2038.JPG",
+      title: "IIC",
+      year: "2024"
+    },
+    {
+      url: "public/IMG_2094.jpg",
+      title: "IIC",
+      year: "2024"
+    },
+    {
+      url: "public/IMG_2121.jpg",
+      title: "IIC",
+      year: "2024"
+    },
+    {
+      url: "public/IMG_20241116_015025_570.jpg",
+      title: "IIC",
+      year: "2024"
+    },
+    {
+      url: "public/IMG20241115230723.jpg",
+      title: "IIC",
+      year: "2024"
+    },
+    {
+      url: "public/IMG_0004.jpeg",
+      title: "IIC",
       year: "2024"
     }
   ];
