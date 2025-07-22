@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8 text-gray-300">
               <div className="flex items-center">
                 <Calendar size={20} className="mr-2 text-pink-400" />
-                <span>September 7-8, 2025</span>
+                <span>September 8-9, 2025</span>
               </div>
               <div className="flex items-center">
                 <MapPin size={20} className="mr-2 text-cyan-400" />

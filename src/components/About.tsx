@@ -61,7 +61,8 @@ const About: React.FC = () => {
           <p className="text-xl text-gray-300 max-w-4xl mx-auto animate-on-scroll opacity-0 leading-relaxed">
             The International Innovation Challenge (IIC) is an empowering platform for young minds to address real-world 
             challenges. The event brings together exceptional talents in a 36-hour hackathon, allowing participants to 
-            brainstorm and devise impactful solutions under the mentorship of industry leaders.
+            brainstorm and devise impactful solutions under the mentorship of industry leaders. We will also feature a
+            startup carnival and international conference to foster innovation and collaboration.
           </p>
         </div>
 

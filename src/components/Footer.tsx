@@ -94,15 +94,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <div className="bg-gradient-to-br from-pink-500/20 to-purple-600/20 p-2 rounded-lg mr-3 mt-0.5">
-                  <Mail className="h-5 w-5 text-pink-400" />
+                  <Phone className="h-5 w-5 text-pink-400" />
                 </div>
-                <span className="text-gray-300">TBA</span>
+                <span className="text-gray-300">Dr. GL Saini - 8890191811<br />Tanishk Mittal - 9728014818</span>
               </li>
               <li className="flex items-start">
                 <div className="bg-gradient-to-br from-cyan-500/20 to-blue-600/20 p-2 rounded-lg mr-3 mt-0.5">
-                  <Phone className="h-5 w-5 text-cyan-400" />
+                  <Mail className="h-5 w-5 text-cyan-400" />
                 </div>
-                <span className="text-gray-300">TBA</span>
+                <span className="text-gray-300">gaindi.saini@jaipur.manipal.edu<br />Tanishkmittal38@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <div className="bg-gradient-to-br from-purple-500/20 to-pink-600/20 p-2 rounded-lg mr-3 mt-0.5">
@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-pink-400/20 pt-8">
+        {/*<div className="border-t border-pink-400/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               &copy; 2025 IIC 2.0. All rights reserved. Built with ❤️ for innovation.
@@ -128,7 +128,7 @@ const Footer: React.FC = () => {
               <a href="#" className="text-gray-400 hover:text-purple-400 text-sm transition-colors duration-300">Code of Conduct</a>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
     </footer>
   );
