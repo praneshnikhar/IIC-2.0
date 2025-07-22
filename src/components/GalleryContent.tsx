@@ -6,77 +6,77 @@ const GalleryContent: React.FC = () => {
 
   const images = [
     {
-      url: "public/20241115_101932.jpg",
+      url: "/20241115_101932.jpg",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/20241115_224002.jpg",
+      url: "/20241115_224002.jpg",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/20241115_224201.jpg",
+      url: "/20241115_224201.jpg",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/20241116_122330.jpg",
+      url: "/20241116_122330.jpg",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG_0001.jpeg",
+      url: "/IMG_0001.jpeg",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG_1930.JPG",
+      url: "/IMG_1930.JPG",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG_2016.JPG",
+      url: "/IMG_2016.JPG",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG_2025.JPG",
+      url: "/IMG_2025.JPG",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG_2028.JPG",
+      url: "/IMG_2028.JPG",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG_2038.JPG",
+      url: "/IMG_2038.JPG",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG_2094.jpg",
+      url: "/IMG_2094.JPG",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG_2121.jpg",
+      url: "/IMG_2121.JPG",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG_20241116_015025_570.jpg",
+      url: "/IMG_20241116_015025_570.jpg",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG20241115230723.jpg",
+      url: "/IMG20241115230723.jpg",
       title: "IIC",
       year: "2024"
     },
     {
-      url: "public/IMG_0004.jpeg",
+      url: "/IMG_0004.jpeg",
       title: "IIC",
       year: "2024"
     }
