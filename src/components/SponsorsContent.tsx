@@ -118,7 +118,7 @@ const SponsorsContent: React.FC = () => {
           </p>
         </div>
 
-        {/* Co-Powered By Section */}
+        
         {coPoweredBy.length > 0 && (
           <div className="space-y-20">
             <div className="animate-on-scroll opacity-0" style={{ animationDelay: `0ms` }}>
@@ -127,12 +127,12 @@ const SponsorsContent: React.FC = () => {
                 <div className="w-16 h-0.5 bg-gradient-to-r from-purple-400 to-indigo-500 mx-auto"></div>
               </div>
 
-              {/* Conditional grid classes for centering and multiple items */}
+              
               <div className={`grid gap-6 ${coPoweredBy.length === 1 ? 'grid-cols-1 justify-items-center' : 'md:grid-cols-2 lg:grid-cols-3'}`}>
                 {coPoweredBy.map((partner, index) => (
                   <div
                     key={index}
-                    // Added max-w-md to control the tile size
+                    
                     className="glass-card rounded-xl p-6 hover:glass-card transition-all duration-300 group relative overflow-hidden max-w-md"
                   >
                     <div className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-indigo-500 opacity-5 group-hover:opacity-10 transition-opacity duration-300`}></div>
@@ -143,7 +143,7 @@ const SponsorsContent: React.FC = () => {
                             partner.icon
                           ) : (
                             <span className="text-2xl font-bold gradient-text">
-                              {/* Changed string manipulation for better initial display */}
+                              
                               {partner.name.split(' ').map(word => word[0]).join('').slice(0, 2).toUpperCase()}
                             </span>
                           )}
@@ -160,7 +160,7 @@ const SponsorsContent: React.FC = () => {
           </div>
         )}
 
-        {/* Main Sponsors Section */}
+        
         <div className="space-y-20 mt-16">
           {sponsorTiers.map((tier, tierIndex) => (
             <div key={tierIndex} className="animate-on-scroll opacity-0" style={{ animationDelay: `${tierIndex * 150}ms` }}>
@@ -186,7 +186,7 @@ const SponsorsContent: React.FC = () => {
                             sponsor.icon
                           ) : (
                             <span className="text-2xl font-bold gradient-text">
-                              {/* Changed string manipulation for better initial display */}
+                             
                               {sponsor.name.split(' ').map(word => word[0]).join('').slice(0, 2).toUpperCase()}
                             </span>
                           )}
@@ -204,7 +204,7 @@ const SponsorsContent: React.FC = () => {
         </div>
 
 
-        {/* Partners Section */}
+        
         <div className="mt-20 animate-on-scroll opacity-0">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold gradient-text mb-4">Our Partners</h3>
@@ -228,7 +228,7 @@ const SponsorsContent: React.FC = () => {
           </div>
         </div>
 
-        {/* Sponsorship CTA */}
+        
         <div className="mt-20 text-center animate-on-scroll opacity-0">
           <div className="glass-card rounded-2xl p-8 max-w-3xl mx-auto">
             <div className="flex items-center justify-center mb-6">
