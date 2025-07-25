@@ -37,35 +37,35 @@ const SponsorsContent: React.FC = () => {
           name: "ISRO",
         },
         {
-          icon: <img src="public/mahindra.avif" alt="Mahindra" className="h-20 w-20 object-contain" />,
+          icon: <img src="/mahindra.avif" alt="Mahindra" className="h-20 w-20 object-contain" />,
           name: "Mahindra",
         },
         {
-          icon: <img src="public/cerebral.png" alt="Cerebral" className="h-20 w-20 object-contain" />,
+          icon: <img src="/cerebral.png" alt="Cerebral" className="h-20 w-20 object-contain" />,
           name: "Cerebral",
         },
         {
-          icon: <img src="public/geeksforgeeks.png" alt="GeekforGeeks" className="h-20 w-20 object-contain" />,
+          icon: <img src="/geeksforgeeks.png" alt="GeekforGeeks" className="h-20 w-20 object-contain" />,
           name: "GeekforGeeks",
         },
         {
-          icon: <img src="public/epam.webp" alt="epam" className="h-20 w-20 object-contain" />,
+          icon: <img src="/epam.webp" alt="epam" className="h-20 w-20 object-contain" />,
           name: "epam",
         },
         {
-          icon: <img src="public/mlhealth360.jpeg" alt="mlHealth360" className="h-20 w-20 object-contain" />,
+          icon: <img src="/mlhealth360.jpeg" alt="mlHealth360" className="h-20 w-20 object-contain" />,
           name: "mlHealth360",
         },
         {
-          icon: <img src="public/rgHospitals.jpeg" alt="RG Hospitals" className="h-20 w-20 object-contain" />,
+          icon: <img src="/rgHospitals.jpeg" alt="RG Hospitals" className="h-20 w-20 object-contain" />,
           name: "RG Hospitals",
         },
         {
-          icon: <img src="public/eCell.jpeg" alt="eCell" className="h-20 w-20 object-contain" />,
+          icon: <img src="/eCell.jpeg" alt="eCell" className="h-20 w-20 object-contain" />,
           name: "eCell",
         },
         {
-          icon: <img src="public/aic.jpeg" alt="aic MUJ" className="h-20 w-20 object-contain" />,
+          icon: <img src="/aic.jpeg" alt="aic MUJ" className="h-20 w-20 object-contain" />,
           name: "aic MUJ",
         },
       ]
@@ -74,7 +74,7 @@ const SponsorsContent: React.FC = () => {
 
   const coPoweredBy = [
     {
-      icon: <img src="public/unstop.png" alt="unstop" className="h-20 w-20 object-contain" />,
+      icon: <img src="/unstop.png" alt="unstop" className="h-20 w-20 object-contain" />,
       name: "unstop",
     }
   ];
