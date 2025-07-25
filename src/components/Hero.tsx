@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
                 <ul className="text-left text-gray-300 space-y-3">
                   {[
                     "Open to all innovators",
-                    "₹2.5L+ in prizes",
+                    "₹6L+ and goodies as prizes",
                     "Expert mentorship",
                     "Global networking opportunities"
                   ].map((item, index) => (
