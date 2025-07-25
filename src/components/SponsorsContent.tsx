@@ -205,7 +205,7 @@ const SponsorsContent: React.FC = () => {
 
 
         
-        <div className="mt-20 animate-on-scroll opacity-0">
+        {/*<div className="mt-20 animate-on-scroll opacity-0">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold gradient-text mb-4">Our Partners</h3>
             <div className="w-16 h-0.5 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto"></div>
@@ -226,7 +226,7 @@ const SponsorsContent: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div>*/}
 
         
         <div className="mt-20 text-center animate-on-scroll opacity-0">
