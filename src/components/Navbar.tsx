@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
               </button>
             ))}
             <button
-              onClick={() => handleNavClick('/home#register')}
+              onClick={() => window.open('https://unstop.com/hackathons/international-innovation-challenge-20-manipal-university-mu-jaipur-1527559', '_blank')}
               className="modern-button neon-button px-6 py-2 rounded-md font-medium transition-all duration-300 shadow-md"
             >
               <Zap size={16} className="inline mr-1" />
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
               </button>
             ))}
             <button
-              onClick={() => handleNavClick('/home#register')}
+              onClick={() => window.open('https://unstop.com/hackathons/international-innovation-challenge-20-manipal-university-mu-jaipur-1527559', '_blank')}
               className="block w-full mt-2 modern-button px-4 py-3 rounded-md font-medium text-center"
             >
               <Zap size={16} className="inline mr-1" />
