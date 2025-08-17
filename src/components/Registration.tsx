@@ -70,13 +70,11 @@ const Registration: React.FC = () => {
               </div>
 
               <div className="text-center">
-                <button className="modern-button neon-button py-4 px-12 rounded-lg text-xl font-bold transition-all duration-300 shadow-md">
+                <button className="modern-button neon-button py-4 px-12 rounded-lg text-xl font-bold transition-all duration-300 shadow-md"
+                onClick={() => window.open('https://unstop.com/hackathons/international-innovation-challenge-20-manipal-university-mu-jaipur-1527559', '_blank')}>
                   <Rocket size={20} className="inline mr-2" />
-                  Registrations Starting Soon!
+                  Register Now!!
                 </button>
-                <p className="text-gray-400 mt-4">
-                  Be the first to know when registration opens
-                </p>
               </div>
             </div>
           </div>

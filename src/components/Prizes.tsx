@@ -31,32 +31,32 @@ const Prizes: React.FC = () => {
       prize: "₹1,00,000",
       gradient: "from-yellow-400 via-orange-500 to-red-500",
       benefits: [
-        "Cash prize of ₹1,00,000",
+        /*"Cash prize of ₹1,00,000",
         "Meetings with top venture capitalists",
         "6-month mentorship program",
-        "Featured in TechCrunch article"
+        "Featured in TechCrunch article"*/
       ]
     },
     {
       position: "2nd Place",
       icon: <Trophy className="h-12 w-12 text-gray-300" />,
-      prize: "₹50,000",
+      prize: "₹75,000",
       gradient: "from-gray-300 via-gray-400 to-gray-500",
       benefits: [
-        "Cash prize of ₹50,000",
+        /*"Cash prize of ₹50,000",
         "3-month accelerator program",
-        "Industry mentorship connections"
+        "Industry mentorship connections"*/
       ]
     },
     {
       position: "3rd Place",
       icon: <Award className="h-12 w-12 text-amber-600" />,
-      prize: "₹25,000",
+      prize: "₹50,000",
       gradient: "from-amber-600 via-amber-700 to-amber-800",
       benefits: [
-        "Cash prize of ₹25,000",
+        /*"Cash prize of ₹25,000",
         "Hardware development kit",
-        "Exclusive workshop access"
+        "Exclusive workshop access"*/
       ]
     }
   ];
@@ -112,7 +112,7 @@ const Prizes: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-on-scroll opacity-0">
-            $50,000+ in cash prizes, plus invaluable opportunities, mentorship, and resources for winners.
+            1.5L+ in cash prizes, plus invaluable opportunities, mentorship, and resources for winners.
           </p>
         </div>
 
@@ -143,7 +143,7 @@ const Prizes: React.FC = () => {
           ))}
         </div>
 
-        <div className="glass-card rounded-2xl p-8 animate-on-scroll opacity-0">
+        {/*<div className="glass-card rounded-2xl p-8 animate-on-scroll opacity-0">
           <h3 className="text-3xl font-bold gradient-text mb-8 text-center">Category Prizes</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {categoryPrizes.map((category, index) => (
@@ -162,7 +162,7 @@ const Prizes: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div>*/}
       </div>
     </section>
   );
