@@ -45,7 +45,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Is there a registration fee?",
-      answer: "Yes, the registration fee is ₹700 per person. This covers your meals, resources, participation kit, and an unforgettable hackathon experience!"
+      answer: "Yes, the registration fee is ₹700 per team. This covers your meals, resources, participation kit, and an unforgettable hackathon experience!"
     },
     {
       question: "What should I bring to the hackathon?",
