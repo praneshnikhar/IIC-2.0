@@ -70,7 +70,7 @@ const FAQ: React.FC = () => {
       Technical Execution,
       Impact & Relevance to the Theme,
       Pitch & Demo Presentation.
-      ` 
+      `  
     }
   ];
 
