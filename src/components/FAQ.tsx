@@ -71,6 +71,8 @@ const FAQ: React.FC = () => {
       Impact & Relevance to the Theme,
       Pitch & Demo Presentation.
       `  
+ 
+
       
     }
   ];
