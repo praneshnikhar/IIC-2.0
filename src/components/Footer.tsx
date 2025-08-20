@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                 <Linkedin className="h-5 w-5 text-cyan-400"/>
               </a>
               <a
-                  href="https://github.com/yourprofile"
+                  href="https://github.com/SS-9098/IIC-2.0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="glass-card hover:glass-card p-3 rounded-full transition-all duration-300"
