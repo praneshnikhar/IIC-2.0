@@ -21,6 +21,7 @@ const FAQ: React.FC = () => {
       },
       { threshold: 0.1 }
     );
+    
 
     const elementsToAnimate = sectionRef.current?.querySelectorAll('.animate-on-scroll');
     elementsToAnimate?.forEach((el) => observer.observe(el));
