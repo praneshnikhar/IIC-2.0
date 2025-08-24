@@ -49,7 +49,11 @@ const FAQ: React.FC = () => {
     },
     {
       question: "What should I bring to the hackathon?",
-      answer: " Your laptop, charger, college ID, and anything else you may need for your project. Also — bring your creativity and caffeine cravings!"
+      answer: "Your laptop, charger, college ID, and anything else you may need for your project. Also — bring your creativity and caffeine cravings!"
+    },
+      {
+      question: "Will accommodations be provided?",
+      answer: "Yes, we will provide two separate common rooms for boys and girls."
     },
     {
       question: "Will there be food provided?",

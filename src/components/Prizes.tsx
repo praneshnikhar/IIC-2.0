@@ -28,7 +28,7 @@ const Prizes: React.FC = () => {
     {
       position: "1st Place",
       icon: <Crown className="h-12 w-12 text-yellow-400" />,
-      prize: "₹1,00,000",
+      prize: "₹75,000",
       gradient: "from-yellow-400 via-orange-500 to-red-500",
       benefits: [
         /*"Cash prize of ₹1,00,000",
@@ -40,7 +40,7 @@ const Prizes: React.FC = () => {
     {
       position: "2nd Place",
       icon: <Trophy className="h-12 w-12 text-gray-300" />,
-      prize: "₹75,000",
+      prize: "₹50,000",
       gradient: "from-gray-300 via-gray-400 to-gray-500",
       benefits: [
         /*"Cash prize of ₹50,000",
@@ -51,7 +51,7 @@ const Prizes: React.FC = () => {
     {
       position: "3rd Place",
       icon: <Award className="h-12 w-12 text-amber-600" />,
-      prize: "₹50,000",
+      prize: "₹25,000",
       gradient: "from-amber-600 via-amber-700 to-amber-800",
       benefits: [
         /*"Cash prize of ₹25,000",
@@ -61,44 +61,44 @@ const Prizes: React.FC = () => {
     }
   ];
 
-  const categoryPrizes = [
-    {
-      category: "Best AI Implementation",
-      prize: "$5,000",
-      sponsor: "TechAI Labs",
-      icon: <Star className="h-6 w-6 text-pink-400" />
-    },
-    {
-      category: "Most Innovative Solution",
-      prize: "$5,000",
-      sponsor: "InnovateCorp",
-      icon: <Zap className="h-6 w-6 text-cyan-400" />
-    },
-    {
-      category: "Best Social Impact",
-      prize: "$5,000",
-      sponsor: "ImpactFund",
-      icon: <Gift className="h-6 w-6 text-purple-400" />
-    },
-    {
-      category: "Best UI/UX Design",
-      prize: "$5,000",
-      sponsor: "DesignWorks",
-      icon: <Star className="h-6 w-6 text-pink-400" />
-    },
-    {
-      category: "Most Technical Challenge",
-      prize: "$5,000",
-      sponsor: "CodeCraft",
-      icon: <Zap className="h-6 w-6 text-cyan-400" />
-    },
-    {
-      category: "People's Choice",
-      prize: "$5,000",
-      sponsor: "Community Vote",
-      icon: <Trophy className="h-6 w-6 text-yellow-400" />
-    }
-  ];
+  // const categoryPrizes = [
+  //   {
+  //     category: "Best AI Implementation",
+  //     prize: "$5,000",
+  //     sponsor: "TechAI Labs",
+  //     icon: <Star className="h-6 w-6 text-pink-400" />
+  //   },
+  //   {
+  //     category: "Most Innovative Solution",
+  //     prize: "$5,000",
+  //     sponsor: "InnovateCorp",
+  //     icon: <Zap className="h-6 w-6 text-cyan-400" />
+  //   },
+  //   {
+  //     category: "Best Social Impact",
+  //     prize: "$5,000",
+  //     sponsor: "ImpactFund",
+  //     icon: <Gift className="h-6 w-6 text-purple-400" />
+  //   },
+  //   {
+  //     category: "Best UI/UX Design",
+  //     prize: "$5,000",
+  //     sponsor: "DesignWorks",
+  //     icon: <Star className="h-6 w-6 text-pink-400" />
+  //   },
+  //   {
+  //     category: "Most Technical Challenge",
+  //     prize: "$5,000",
+  //     sponsor: "CodeCraft",
+  //     icon: <Zap className="h-6 w-6 text-cyan-400" />
+  //   },
+  //   {
+  //     category: "People's Choice",
+  //     prize: "$5,000",
+  //     sponsor: "Community Vote",
+  //     icon: <Trophy className="h-6 w-6 text-yellow-400" />
+  //   }
+  // ];
 
   return (
     <section id="prizes" ref={sectionRef} className="py-20 space-bg">
@@ -112,7 +112,7 @@ const Prizes: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-on-scroll opacity-0">
-            1.5L+ in cash prizes, plus invaluable opportunities, mentorship, and resources for winners.
+            7L+ in cash prizes, plus invaluable opportunities, mentorship, and resources for winners.
           </p>
         </div>
 

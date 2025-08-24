@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
             </div>
 
             <p className="text-gray-300 mb-6 leading-relaxed">
-              The premier hackathon experience where innovation meets opportunity. Join us for 48 hours of coding,
+              The premier hackathon experience where innovation meets opportunity. Join us for 36 hours of coding,
               collaboration, and creation that will shape the future.
             </p>
             <div className="flex space-x-4">

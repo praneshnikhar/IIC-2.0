@@ -28,7 +28,7 @@ const Registration: React.FC = () => {
 
   const benefits = [
     "Connect with industry professionals and peers",
-    "Compete for ₹2.5L+ in prizes",
+    "Compete for ₹7L+ in prizes",
     "Learn new skills and technologies",
     "Build your portfolio with impressive projects",
     "Potential job opportunities with sponsor companies"

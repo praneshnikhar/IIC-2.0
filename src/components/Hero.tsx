@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
             <div className="inline-block px-6 py-2 mb-6 rounded-full glass-card">
               <p className="text-white font-medium flex items-center">
                 <Rocket size={18} className="mr-2 text-pink-400" />
-                <span className="gradient-text">Registrations Started!</span>
+                <span className="gradient-text">Round 1 ends 31st August!</span>
               </p>
             </div>
 
@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
                 <ul className="text-left text-gray-300 space-y-3">
                   {[
                     "Open to all innovators",
-                    "₹6L+ and goodies as prizes",
+                    "₹7L+ in goodies and prizes",
                     "Expert mentorship",
                     "Global networking opportunities"
                   ].map((item, index) => (
