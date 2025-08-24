@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Zap, Calendar, MapPin, Rocket } from 'lucide-react';
 import GlowingParticles from './GlowingParticles';
+import Pdf from '/Guidelines.pdf'
 
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,8 +54,8 @@ const Hero: React.FC = () => {
                 Join the Revolution
               </button>
               <button className="glass-card hover:glass-card text-white font-medium py-4 px-8 rounded-lg transition-all duration-300 text-center border border-pink-400/30 shadow-sm"
-              onClick={() => window.open('https://unstop.com/hackathons/international-innovation-challenge-20-manipal-university-mu-jaipur-1527559', '_blank')}>
-                Discover More
+              onClick={() => window.open(Pdf, '_blank')}>
+                Guidelines
               </button>
             </div>
 
