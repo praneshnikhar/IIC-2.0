@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Prizes from '../components/Prizes';
+import Prizes from '../components/Themes';
 import FAQ from '../components/FAQ';
 import Registration from '../components/Registration';
 import Footer from '../components/Footer';
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
       <About />
       {/*<Timeline />*/}
       <Prizes />
+      <Themes />
       <FAQ />
       <Registration />
       <Footer />
