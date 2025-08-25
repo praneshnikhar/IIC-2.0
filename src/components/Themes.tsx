@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Shield, AlertTriangle, UserCheck, Lock, Monitor, Home, Heart, Building, Rocket, BookOpen, Sprout, GraduationCap } from 'lucide-react';
+import { Lightbulb, Shield, AlertTriangle, UserCheck, Lock, Monitor, Home, Heart, Building, Rocket, BookOpen, Sprout, GraduationCap } from 'lucide-react';
 
 const Themes: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -44,7 +44,7 @@ const Themes: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <div className="inline-block p-3 bg-gradient-to-br from-yellow-500/20 to-orange-600/20 rounded-full mb-4 animate-on-scroll opacity-0">
-            <Shield className="h-8 w-8 text-yellow-400" />
+            <Lightbulb className="h-8 w-8 text-yellow-400" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-on-scroll opacity-0">
             Themes <span className="gradient-text">IIC 2.0</span>
@@ -75,3 +75,4 @@ const Themes: React.FC = () => {
 };
 
 export default Themes;
+
