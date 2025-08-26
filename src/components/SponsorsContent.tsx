@@ -33,18 +33,6 @@ const SponsorsContent: React.FC = () => {
       gradient: "from-yellow-400 to-orange-500",
       sponsors: [
         {
-          icon: <img src="/isro.jpg" alt="ISRO Logo" className="h-20 w-20 object-contain" />,
-          name: "ISRO",
-        },
-        {
-          icon: <img src="/mahindra.avif" alt="Mahindra" className="h-20 w-20 object-contain" />,
-          name: "Mahindra",
-        },
-        {
-          icon: <img src="/cerebral.png" alt="Cerebral" className="h-20 w-20 object-contain" />,
-          name: "Cerebral",
-        },
-        {
           icon: <img src="/geeksforgeeks.png" alt="GeekforGeeks" className="h-20 w-20 object-contain" />,
           name: "GeekforGeeks",
         },
@@ -57,16 +45,47 @@ const SponsorsContent: React.FC = () => {
           name: "mlHealth360",
         },
         {
+          icon: <img src="/eCell.jpeg" alt="eCell" className="h-20 w-20 object-contain" />,
+          name: "E-Cell",
+        },
+        {
+          icon: <img src="/aic.jpeg" alt="aic MUJ" className="h-20 w-20 object-contain" />,
+          name: "AIC MUJ",
+        },
+        {
+          icon: <img src="/tuf.png" alt="TUF" className="h-20 w-20 object-contain" />,
+          name: "TUF",
+        }
+      ]
+    },
+      {
+      tier: "Problem Statements by",
+      icon: < >< />,
+      gradient: "",
+      sponsors: [
+        {
+          icon: <img src="/isro.jpg" alt="ISRO Logo" className="h-20 w-20 object-contain" />,
+          name: "ISRO",
+        },
+        {
+          icon: <img src="/mahindra.avif" alt="Mahindra" className="h-20 w-20 object-contain" />,
+          name: "Mahindra",
+        },
+        {
+          icon: <img src="/cerebral.png" alt="Cerebral" className="h-20 w-20 object-contain" />,
+          name: "Cerebral",
+        },
+        {
+          icon: <img src="/epam.webp" alt="epam" className="h-20 w-20 object-contain" />,
+          name: "epam",
+        },
+        {
           icon: <img src="/rgHospitals.jpeg" alt="RG Hospitals" className="h-20 w-20 object-contain" />,
           name: "RG Hospitals",
         },
         {
-          icon: <img src="/eCell.jpeg" alt="eCell" className="h-20 w-20 object-contain" />,
-          name: "eCell",
-        },
-        {
-          icon: <img src="/aic.jpeg" alt="aic MUJ" className="h-20 w-20 object-contain" />,
-          name: "aic MUJ",
+          icon: <img src="/drdo.png" alt="DRDO" className="h-20 w-20 object-contain" />,
+          name: "DRDO",
         },
       ]
     },
@@ -254,7 +273,8 @@ const SponsorsContent: React.FC = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="modern-button neon-button px-8 py-3 rounded-lg font-medium transition-all duration-300">
+              <button className="modern-button neon-button px-8 py-3 rounded-lg font-medium transition-all duration-300"
+              onClick={()=>window.open('https://forms.gle/o3LkRUzYf6Ld1hWLA', '_blank') }>
                 Sponsor IIC 2.0
               </button>
               <button className="glass-card hover:glass-card text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 border border-pink-400/30">
