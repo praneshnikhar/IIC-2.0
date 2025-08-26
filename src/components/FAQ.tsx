@@ -130,7 +130,16 @@ const FAQ: React.FC = () => {
           <p className="text-gray-300 mb-6 text-lg">
             Still have questions? We're here to help!
           </p>
-          <button className="modern-button neon-button px-8 py-3 rounded-lg font-medium transition-all duration-300">
+          <button className="modern-button neon-button px-8 py-3 rounded-lg font-medium transition-all duration-300"
+          onClick={() => {
+            const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+            window.location.href = 'tel:+919728014818';
+            } else {
+            window.location.href = 'mailto:contact@iic.com?subject=Inquiry about IIC 2.0';
+            }
+          }}
+          >
             Contact Us
           </button>
         </div>
