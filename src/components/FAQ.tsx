@@ -136,7 +136,7 @@ const FAQ: React.FC = () => {
             if (isMobile) {
             window.location.href = 'tel:+919728014818';
             } else {
-            window.location.href = 'mailto:contact@iic.com?subject=Inquiry about IIC 2.0';
+            window.location.href = 'mailto:Tanishkmittal38@gmail.com?subject=Inquiry about IIC 2.0';
             }
           }}
           >
