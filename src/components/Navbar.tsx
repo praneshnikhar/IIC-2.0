@@ -42,7 +42,6 @@ const Navbar: React.FC = () => {
     { name: 'Themes', path: '/home#themes' },
     { name: 'Sponsors', path: '/sponsors' },
     { name: 'Gallery', path: '/gallery' },
-    { name: 'Ambassador', path: '/ambassador' }
   ];
 
   return (
