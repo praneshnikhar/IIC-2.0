@@ -39,8 +39,8 @@ const SponsorsContent: React.FC = () => {
           name: "GeekforGeeks",
         },
         {
-          icon: <img src="/epam.webp" alt="epam" className="h-20 w-20 object-contain" />,
-          name: "epam",
+          icon: <img src="/doic.png" alt="epam" className="h-20 w-20 object-contain" />,
+          name: "DoIC MUJ",
         },
         {
           icon: <img src="/mlhealth360.jpeg" alt="mlHealth360" className="h-20 w-20 object-contain" />,
@@ -76,8 +76,8 @@ const SponsorsContent: React.FC = () => {
           name: "Talsmart",
         },
         {
-          icon: <img src="/doic.png" alt="epam" className="h-20 w-20 object-contain" />,
-          name: "DoIC MUJ",
+          icon: <img src="/epam.webp" alt="epam" className="h-20 w-20 object-contain" />,
+          name: "epam",
         },
         {
           icon: <img src="/rgHospitals.jpeg" alt="RG Hospitals" className="h-20 w-20 object-contain" />,
