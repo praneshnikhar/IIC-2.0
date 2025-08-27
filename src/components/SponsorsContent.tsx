@@ -1,7 +1,7 @@
 
-
 import React, { useEffect, useRef } from 'react';
 import { Building, Sparkles, Crown } from 'lucide-react';
+import Pdf from '/IIC_DECK.pdf'
 
 const SponsorsContent: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -26,6 +26,8 @@ const SponsorsContent: React.FC = () => {
     };
   }, []);
 
+  // @ts-ignore
+  // @ts-ignore
   const sponsorTiers = [
     {
       tier: "Sponsors",
@@ -60,8 +62,6 @@ const SponsorsContent: React.FC = () => {
     },
       {
       tier: "Problem Statements by",
-      icon: < >< />,
-      gradient: "",
       sponsors: [
         {
           icon: <img src="/isro.jpg" alt="ISRO Logo" className="h-20 w-20 object-contain" />,
@@ -72,12 +72,12 @@ const SponsorsContent: React.FC = () => {
           name: "Mahindra",
         },
         {
-          icon: <img src="/cerebral.png" alt="Cerebral" className="h-20 w-20 object-contain" />,
-          name: "Cerebral",
+          icon: <img src="/talsmart.jpg" alt="Cerebral" className="h-20 w-20 object-contain" />,
+          name: "Talsmart",
         },
         {
-          icon: <img src="/epam.webp" alt="epam" className="h-20 w-20 object-contain" />,
-          name: "epam",
+          icon: <img src="/doic.png" alt="epam" className="h-20 w-20 object-contain" />,
+          name: "DoIC MUJ",
         },
         {
           icon: <img src="/rgHospitals.jpeg" alt="RG Hospitals" className="h-20 w-20 object-contain" />,
@@ -98,7 +98,7 @@ const SponsorsContent: React.FC = () => {
     }
   ];
 
-  const partnerCategories = [
+  /*const partnerCategories = [
     {
       title: "Community Partners",
       partners: [
@@ -119,7 +119,7 @@ const SponsorsContent: React.FC = () => {
         "The Startup"
       ]
     }
-  ];
+  ];*/
 
   return (
     <div className="min-h-screen space-bg" ref={sectionRef}>
@@ -274,10 +274,11 @@ const SponsorsContent: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="modern-button neon-button px-8 py-3 rounded-lg font-medium transition-all duration-300"
-              onClick={()=>window.open('https://forms.gle/o3LkRUzYf6Ld1hWLA', '_blank') }>
+              onClick={()=>window.open('https://forms.gle/o3LkRUzYf6Ld1hWLA', '_blank')}>
                 Sponsor IIC 2.0
               </button>
-              <button className="glass-card hover:glass-card text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 border border-pink-400/30">
+              <button className="glass-card hover:glass-card text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 border border-pink-400/30"
+              onClick={()=>window.open(Pdf, '_blank')}>
                 Download Brochure
               </button>
             </div>
