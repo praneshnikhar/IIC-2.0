@@ -1,130 +1,221 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+// import React, { useState, useEffect } from 'react';
+// import { Menu, X, Zap } from 'lucide-react';
+// import { Link, useLocation, useNavigate } from 'react-router-dom';
+
+// const Navbar: React.FC = () => {
+//   const [isScrolled, setIsScrolled] = useState(false);
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const location = useLocation();
+//   const navigate = useNavigate();
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (window.scrollY > 50) {
+//         setIsScrolled(true);
+//       } else {
+//         setIsScrolled(false);
+//       }
+//     };
+
+//     window.addEventListener('scroll', handleScroll);
+//     return () => window.removeEventListener('scroll', handleScroll);
+//   }, []);
+
+//   const handleNavClick = (path: string) => {
+//     const [route, section] = path.split('#');
+
+//     if (location.pathname !== route) {
+//       navigate(path);
+//     } else if (section) {
+//       const element = document.getElementById(section);
+//       if (element) {
+//         element.scrollIntoView({ behavior: 'smooth' });
+//       }
+//     }
+
+//     setIsMenuOpen(false);
+//   };
+
+//   const navItems = [
+//     { name: 'About', path: '/home#about' },
+//     { name: 'Prizes', path: '/home#prizes' },
+//     { name: 'Themes', path: '/home#themes' },
+//     { name: 'Sponsors', path: '/sponsors' },
+//     { name: 'Gallery', path: '/gallery' },
+//   ];
+
+//   return (
+//     <nav
+//       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+//         isScrolled ? 'glass-card h-0 overflow-hidden' : 'bg-transparent py-4'
+//       }`}
+//     >
+//       <div className="container mx-auto px-4 md:px-6">
+//         <div className="flex justify-between items-center">
+//           {/* Logo Section */}
+//           <div className="flex items-center space-x-4">
+//             {/* College Logo Placeholder */}
+//             <Link to="/" className="flex items-center space-x-3">
+//               <img id="logo" role="button" alt="MUJ-Logo.png"
+//                   src="/muj-logo.png" width="140"
+//               />
+//             </Link>
+
+//             {/* Separator */}
+//             <div className="w-px h-8 bg-gradient-to-b from-pink-400 to-cyan-400 opacity-50"></div>
+
+//             {/* Hackathon Logo */}
+//             <Link to="/" className="flex items-center space-x-3">
+//               <img id="logo" role="button" alt="IIC-Logo.png"
+//                    src="/iic-logo.png" width="100"
+//               />
+//             </Link>
+//           </div>
+
+//           {/* Desktop Navigation */}
+//           <div className="hidden md:flex space-x-8">
+//             {navItems.map((item) => (
+//                 <button
+//                     key={item.name}
+//                     onClick={() => handleNavClick(item.path)}
+//                     className="text-gray-300 hover:text-pink-400 transition-colors duration-300 font-medium relative group"
+//                 >
+//                   {item.name}
+//                   <span
+//                       className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+//               </button>
+//             ))}
+//             <button
+//               onClick={() => window.open('https://unstop.com/hackathons/international-innovation-challenge-20-manipal-university-mu-jaipur-1527559', '_blank')}
+//               className="modern-button neon-button px-6 py-2 rounded-md font-medium transition-all duration-300 shadow-md"
+//             >
+//               <Zap size={16} className="inline mr-1" />
+//               Register
+//             </button>
+//           </div>
+
+//           {/* Mobile Navigation Toggle */}
+//           <button
+//             className="md:hidden text-white p-2 glass-card rounded-lg"
+//             onClick={() => setIsMenuOpen(!isMenuOpen)}
+//           >
+//             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+//           </button>
+//         </div>
+
+//         {/* Mobile Navigation Menu */}
+//         {isMenuOpen && (
+//           <div className="md:hidden mt-4 py-4 px-2 glass-card rounded-lg">
+//             {navItems.map((item) => (
+//               <button
+//                 key={item.name}
+//                 onClick={() => handleNavClick(item.path)}
+//                 className="block w-full text-left py-3 text-gray-300 hover:text-pink-400 transition-colors duration-300 font-medium"
+//               >
+//                 {item.name}
+//               </button>
+//             ))}
+//             <button
+//               onClick={() => window.open('https://unstop.com/hackathons/international-innovation-challenge-20-manipal-university-mu-jaipur-1527559', '_blank')}
+//               className="block w-full mt-2 modern-button px-4 py-3 rounded-md font-medium text-center"
+//             >
+//               <Zap size={16} className="inline mr-1" />
+//               Register
+//             </button>
+//           </div>
+//         )}
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const handleNavClick = (path: string) => {
-    const [route, section] = path.split('#');
-
-    if (location.pathname !== route) {
-      navigate(path);
-    } else if (section) {
-      const element = document.getElementById(section);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-
-    setIsMenuOpen(false);
-  };
-
-  const navItems = [
-    { name: 'About', path: '/home#about' },
-    { name: 'Prizes', path: '/home#prizes' },
-    { name: 'Themes', path: '/home#themes' },
-    { name: 'Sponsors', path: '/sponsors' },
-    { name: 'Gallery', path: '/gallery' },
-  ];
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
-        isScrolled ? 'glass-card h-0 overflow-hidden' : 'bg-transparent py-4'
-      }`}
-    >
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-between items-center">
-          {/* Logo Section */}
-          <div className="flex items-center space-x-4">
-            {/* College Logo Placeholder */}
-            <Link to="/" className="flex items-center space-x-3">
-              <img id="logo" role="button" alt="MUJ-Logo.png"
-                  src="/muj-logo.png" width="140"
-              />
-            </Link>
+    <nav className="bg-[#0a1931] fixed w-full z-50 shadow-md">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <Link to="/" className="text-white font-bold text-2xl">
+          IIC 2.0
+        </Link>
 
-            {/* Separator */}
-            <div className="w-px h-8 bg-gradient-to-b from-pink-400 to-cyan-400 opacity-50"></div>
-
-            {/* Hackathon Logo */}
-            <Link to="/" className="flex items-center space-x-3">
-              <img id="logo" role="button" alt="IIC-Logo.png"
-                   src="/iic-logo.png" width="100"
-              />
-            </Link>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-                <button
-                    key={item.name}
-                    onClick={() => handleNavClick(item.path)}
-                    className="text-gray-300 hover:text-pink-400 transition-colors duration-300 font-medium relative group"
-                >
-                  {item.name}
-                  <span
-                      className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-              </button>
-            ))}
-            <button
-              onClick={() => window.open('https://unstop.com/hackathons/international-innovation-challenge-20-manipal-university-mu-jaipur-1527559', '_blank')}
-              className="modern-button neon-button px-6 py-2 rounded-md font-medium transition-all duration-300 shadow-md"
-            >
-              <Zap size={16} className="inline mr-1" />
-              Register
-            </button>
-          </div>
-
-          {/* Mobile Navigation Toggle */}
-          <button
-            className="md:hidden text-white p-2 glass-card rounded-lg"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+        {/* Desktop Menu */}
+        <div className="hidden md:flex space-x-6">
+          <Link to="/" className="hover:text-pink-400 transition-colors duration-300">
+            Home
+          </Link>
+          <Link to="/about" className="hover:text-pink-400 transition-colors duration-300">
+            About
+          </Link>
+          <Link to="/sponsors" className="hover:text-pink-400 transition-colors duration-300">
+            Sponsors
+          </Link>
+          {/* ✅ New Links */}
+          <Link to="/judges-mentors" className="hover:text-pink-400 transition-colors duration-300">
+            Judges & Mentors
+          </Link>
+          <Link to="/guests" className="hover:text-pink-400 transition-colors duration-300">
+            Guests
+          </Link>
         </div>
 
-        {/* Mobile Navigation Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 px-2 glass-card rounded-lg">
-            {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => handleNavClick(item.path)}
-                className="block w-full text-left py-3 text-gray-300 hover:text-pink-400 transition-colors duration-300 font-medium"
-              >
-                {item.name}
-              </button>
-            ))}
-            <button
-              onClick={() => window.open('https://unstop.com/hackathons/international-innovation-challenge-20-manipal-university-mu-jaipur-1527559', '_blank')}
-              className="block w-full mt-2 modern-button px-4 py-3 rounded-md font-medium text-center"
-            >
-              <Zap size={16} className="inline mr-1" />
-              Register
-            </button>
-          </div>
-        )}
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          ☰
+        </button>
       </div>
+
+      {/* Mobile Dropdown */}
+      {isOpen && (
+        <div className="md:hidden bg-[#0a1931] px-4 py-6 space-y-4">
+          <Link
+            to="/"
+            className="block text-white hover:text-pink-400 transition-colors duration-300"
+            onClick={() => setIsOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className="block text-white hover:text-pink-400 transition-colors duration-300"
+            onClick={() => setIsOpen(false)}
+          >
+            About
+          </Link>
+          <Link
+            to="/sponsors"
+            className="block text-white hover:text-pink-400 transition-colors duration-300"
+            onClick={() => setIsOpen(false)}
+          >
+            Sponsors
+          </Link>
+          {/* ✅ New Links in Mobile Menu */}
+          <Link
+            to="/judges-mentors"
+            className="block text-white hover:text-pink-400 transition-colors duration-300"
+            onClick={() => setIsOpen(false)}
+          >
+            Judges & Mentors
+          </Link>
+          <Link
+            to="/guests"
+            className="block text-white hover:text-pink-400 transition-colors duration-300"
+            onClick={() => setIsOpen(false)}
+          >
+            Guests
+          </Link>
+        </div>
+      )}
     </nav>
   );
 };
